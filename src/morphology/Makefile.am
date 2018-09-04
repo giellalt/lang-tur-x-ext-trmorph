@@ -19,21 +19,10 @@
 HFST_LEXC_LOCAL_FLAGS=
 
 # Set this to name of lexc file containing Multichar_Symbols and LEXICON Root
-GT_LEXC_ROOT=$(srcdir)/root.lexc
+GT_LEXC_ROOT=$(srcdir)/ext-TRmorph/analyzer.cpp.lexc
 
 # Set this to the names of all regular lexc source files:
-GT_LEXC_SRCS_L1_L2=\
-			 affixes/adjectives.lexc  \
-			 affixes/nouns.lexc       \
-			 affixes/propernouns.lexc \
-			 affixes/verbs.lexc       \
-			 stems/adjectives.lexc    \
-			 stems/nouns.lexc         \
-			 stems/numerals.lexc      \
-			 stems/prefixes.lexc      \
-			 stems/pronouns.lexc      \
-			 stems/punctuation.lexc   \
-			 stems/verbs.lexc
+GT_LEXC_SRCS_L1_L2=
 
 # If you are building an error-detecting L2 analyser, specify the lexc files
 # that differ between the regular L1 and the L2 analysers below, in L1 and
@@ -75,6 +64,10 @@ GT_DISTRO_SRCS=
 
 GIELLA_LOCAL_TARGETS=
 
+ext-TRmorph/analyzer.cpp.lexc: ext-TRmorph/analyzer.lexc
+	@echo $(dir $< )
+	cd $(dir $@ ) && $(MAKE) $(notdir $@ )
+
 ### END: Local processing: ###
 
 ####### Other targets: ###########
@@ -82,6 +75,7 @@ GIELLA_LOCAL_TARGETS=
 # easily get updates from the template dir through svn merge.
 clean-local:
 	-rm -f *.all.* *fst *.foma *.script generated_files/*.lexc lexicon.*
+	-$(MAKE) -C ext-TRmorph clean
 
 include $(top_srcdir)/am-shared/src-morphology-dir-include.am
 
