@@ -65,8 +65,20 @@ GT_DISTRO_SRCS=
 GIELLA_LOCAL_TARGETS=
 
 ext-TRmorph/analyzer.cpp.lexc: ext-TRmorph/analyzer.lexc
-	@echo $(dir $< )
-	cd $(dir $@ ) && $(MAKE) $(notdir $@ )
+	$(AM_V_GEN)cd $(dir $@ ) && $(MAKE) $(notdir $@ )
+
+lexicon.att: ext-TRmorph/trmorph.fst
+	$(AM_V_FOMA)$(FOMA) -e "load stack $<" -e "write att > $@" -e "quit"
+
+ext-TRmorph/trmorph.fst: ext-TRmorph/analyzer.lexc
+	$(AM_V_GEN)cd $(dir $< ) && $(MAKE) hyphenate.cpp.xfst
+	$(AM_V_GEN)cd $(dir $@ ) && $(MAKE) $(notdir $@ )
+
+lexicon.foma  \
+lexicon.xfst  \
+lexicon.hfst: \
+lexicon.%: lexicon.att
+	$(AM_V_XFST_TOOL)$(XFST_TOOL) -e "read att $<" -e "save stack $@" -e quit
 
 ### END: Local processing: ###
 
