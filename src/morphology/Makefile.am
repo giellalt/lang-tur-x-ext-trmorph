@@ -67,18 +67,24 @@ GIELLA_LOCAL_TARGETS=
 ext-TRmorph/analyzer.cpp.lexc: ext-TRmorph/analyzer.lexc
 	$(AM_V_GEN)cd $(dir $@ ) && $(MAKE) $(notdir $@ )
 
-lexicon.att: ext-TRmorph/trmorph.fst
-	$(AM_V_FOMA)$(FOMA) -e "load stack $<" -e "write att > $@" -e "quit"
-
 ext-TRmorph/trmorph.fst: ext-TRmorph/analyzer.lexc
 	$(AM_V_GEN)cd $(dir $< ) && $(MAKE) hyphenate.cpp.xfst
 	$(AM_V_GEN)cd $(dir $@ ) && $(MAKE) $(notdir $@ )
 
-lexicon.foma  \
-lexicon.xfst  \
-lexicon.hfst: \
-lexicon.%: lexicon.att
-	$(AM_V_XFST_TOOL)$(XFST_TOOL) -e "read att $<" -e "save stack $@" -e quit
+lexicon.hfst: ext-TRmorph/trmorph.fst
+	$(AM_V_CP)cp -f $< $@.gz
+	$(AM_V_GEN)gunzip $@.gz
+	$(AM_V_MV)mv $@ $@.tmp
+	$(AM_V_FST2FST)$(HFST_FST2FST) $(MORE_VERBOSITY) $(HFST_FORMAT) -i $@.tmp -o $@
+	$(AM_V_at)rm -f $@.tmp
+
+lexicon.foma: ext-TRmorph/trmorph.fst
+	$(AM_V_CP)cp -f $< $@
+
+# Outcommented - the generted ATT format is not complete for Xfst consumption. Maybe later.
+# lexicon.xfst: lexicon.hfst
+# 	$(AM_V_FST2TXT)$(HFST_FST2TXT) < $< > $@.att
+# 	$(AM_V_XFST)$(XFST) $(VERBOSITY) -e "read att $@.att" -e "save stack $@" -stop
 
 ### END: Local processing: ###
 
