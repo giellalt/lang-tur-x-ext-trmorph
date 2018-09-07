@@ -23,6 +23,10 @@
 GT_HYPHENATION_MAIN=hyphenation.xfscript
 GT_HYPHENATION_SUPPLEMENTS=
 
+hyphenation.xfscript: \
+			$(top_srcdir)/src/morphology/ext-TRmorph/hyphenate.cpp.xfst
+	$(AM_V_CP)cp -f $< $@
+
 include $(top_srcdir)/am-shared/src-hyphenation-dir-include.am
 
 # vim: set ft=automake:
