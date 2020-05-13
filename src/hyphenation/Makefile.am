@@ -27,6 +27,6 @@ hyphenation.xfscript: \
 			$(top_srcdir)/src/morphology/ext-TRmorph/hyphenate.cpp.xfst
 	$(AM_V_CP)cp -f $< $@
 
-include $(top_srcdir)/am-shared/src-hyphenation-dir-include.am
+include $(top_srcdir)/../giella-core/am-shared/src-hyphenation-dir-include.am
 
 # vim: set ft=automake:
