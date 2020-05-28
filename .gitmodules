@@ -1,0 +1,3 @@
+[submodule "src/fst/ext-TRmorph"]
+	path = src/fst/ext-TRmorph
+	url = https://github.com/snomos/TRmorph.git
