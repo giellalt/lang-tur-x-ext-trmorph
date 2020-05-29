@@ -1,0 +1,43 @@
+A;A;mi;mi<Q>
+A;A;mi;mi<Q><3p>
+A;A;mi;mi<Q><3s>
+A;A;mu;mu<Q><3s>
+A;A;mü;mü<Q><3s>
+A;A;mı;mı<Q><3s>
+A;A;geldi mi;gel<V><past><3p><q>
+A;A;geldin mi;gel<V><past><2s><q>
+A;A;geldiler mi;gel<V><past><3p><q>
+A;A;gelecek mi;gel<V><fut><q><3s>
+A;A;gelecek misin;gel<V><fut><q><2s>
+A;A;gelecekler mi;gel<V><fut><3p><q>
+A;R;gelecek miler;
+A;R;geldi misin;
+A;R;geldi miler;
+A;A;okuyor muyuz;oku<V><cont><q><1p>
+A;A;okuyor muyduk;oku<V><cont><q><cpl:past><1p>
+A;A;okuyor muymuşuz;oku<V><cont><q><cpl:evid><1p>
+A;A;okuyor muymuşlar;oku<V><cont><q><cpl:evid><3p>
+A;A;okuyorlar mıymış;oku<V><cont><3p><q><cpl:evid>
+A;A;göçmüşler mi;göç<V><evid><3p><q>
+A;A;göçüyorlar mıymış;göç<V><cont><3p><q><cpl:evid>
+A;A;göçmüş mü;göç<V><evid><q><3s>
+A;A;göçmüş müdür;göç<V><evid><q><3p><dir>
+A;A;göçmüş müdürler;göç<V><evid><q><dir><3p>
+A;A;okumakta mı;oku<V><impf><q><3s>
+A;A;okumakta mıdır;oku<V><impf><q><3s><dir>
+A;A;okumakta mıdırlar;oku<V><impf><q><dir><3p>
+# the following one is questionable
+A;A;okumaktalar mıdır;oku<V><impf><3p><q><dir>
+A;A;okumaktalar mı;oku<V><impf><3p><q>
+A;A;okumaktalar mıymış;oku<V><impf><3p><q><cpl:evid>
+A;A;okumakta mıymışlar;oku<V><impf><q><cpl:evid><3p>
+A;A;okumalı mı;oku<V><obl><q><3s>
+A;A;okumalı mıyız;oku<V><obl><q><1p>
+A;A;okumalı mısınız;oku<V><obl><q><2p>
+A;A;okumalı mısınızdır;oku<V><obl><q><2p><dir>
+A;R;okumaktalar mıymışlar;oku<V><vn:inf><N><loc><3p><q><cpl:evid><3p>
+A;R;okumakta mıymışızdır;
+A;A;okuyor muydular;oku<V><cont><q><cpl:past><3p>
+A;A;okuyorlar mıydı;oku<V><cont><3p><q><cpl:past>
+A;A;okuyor muyduk;oku<V><cont><q><cpl:past><1p>
+A;A;okuyor muyduksa;oku<V><cont><q><cpl:past><1p><cpl:cond>

@@ -1,0 +1,40 @@
+!
+! Punctuation
+!
+
+%-              Punc;
+%,              Punc;
+%;              Punc; %: Punc;
+%!              Punc;
+%?              Punc;
+%/              Punc;
+%.              Punc;
+%.%.            Punc;
+%.%.%.          Punc;
+%'              Punc;
+%‘              Punc;
+%’              Punc;
+%"              Punc;
+%"              Punc;
+%“              Punc;
+%”              Punc;
+%«              Punc;
+%»              Punc;
+%(              Punc;
+%)              Punc;
+%‹              Punc;
+%›              Punc;
+%„              Punc;
+%‟              Punc;
+%‚              Punc;
+%‛              Punc;
+%>              Punc;
+%<              Punc;
+%[              Punc;
+%]              Punc;
+%`              Punc;
+%…              Punc;
+%`%`            Punc;
+%'%'            Punc;
+—               Punc;
+–               Punc;
