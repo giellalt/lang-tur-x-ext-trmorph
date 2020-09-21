@@ -1,0 +1,9 @@
+name = "Turkish (trmorph)"
+version = "0.0.1"
+
+[macos]
+system_pkg_id = "no.divvun.MacDivvun.tur-x-ext-trmorph"
+
+[windows]
+system_product_code = "{1F9480A0-E8FA-4996-B11D-38989198826D}_is1"
+# extra_locales = { tr = "tur-x-ext-trmorph" }
