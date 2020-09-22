@@ -67,21 +67,21 @@ GT_DISTRO_SRCS=
 
 GIELLA_LOCAL_TARGETS=
 
-ext-TRmorph/analyzer.cpp.lexc: ext-TRmorph/analyzer.lexc
+$(srcdir)/ext-TRmorph/analyzer.cpp.lexc: $(srcdir)/ext-TRmorph/analyzer.lexc
 	$(AM_V_GEN)cd $(dir $@ ) && $(MAKE) $(notdir $@ )
 
-ext-TRmorph/trmorph.fst: ext-TRmorph/analyzer.lexc
+$(srcdir)/ext-TRmorph/trmorph.fst: $(srcdir)/ext-TRmorph/analyzer.lexc
 	$(AM_V_GEN)cd $(dir $< ) && $(MAKE) hyphenate.cpp.xfst
 	$(AM_V_GEN)cd $(dir $@ ) && $(MAKE) $(notdir $@ )
 
-lexicon.hfst: ext-TRmorph/trmorph.fst
+lexicon.hfst: $(srcdir)/ext-TRmorph/trmorph.fst
 	$(AM_V_CP)cp -f $< $@.gz
 	$(AM_V_GEN)gunzip $@.gz
 	$(AM_V_MV)mv $@ $@.tmp
 	$(AM_V_FST2FST)$(HFST_FST2FST) $(MORE_VERBOSITY) $(HFST_FORMAT) -i $@.tmp -o $@
 	$(AM_V_at)rm -f $@.tmp
 
-lexicon.foma: ext-TRmorph/trmorph.fst
+lexicon.foma: $(srcdir)/ext-TRmorph/trmorph.fst
 	$(AM_V_CP)cp -f $< $@
 
 # Outcommented - the generted ATT format is not complete for Xfst consumption. Maybe later.
@@ -97,7 +97,7 @@ lexicon.foma: ext-TRmorph/trmorph.fst
 clean-local:
 	-rm -f *.all.* *fst *.foma *.script generated_files/*.lexc lexicon.*
 	-rm -f url.lexc *.tmp.*
-	-$(MAKE) -C ext-TRmorph clean
+	-$(MAKE) -C $(srcdir)/ext-TRmorph clean
 
 include $(srcdir)/Makefile.modifications-phon.am
 include $(top_srcdir)/../giella-core/am-shared/src-morphology-dir-include.am
