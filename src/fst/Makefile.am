@@ -97,7 +97,8 @@ lexicon.foma: $(srcdir)/ext-TRmorph/trmorph.fst
 # easily get updates from the template dir through svn merge.
 clean-local:
 	-rm -f *.all.* *fst *.foma *.script generated_files/*.lexc lexicon.*
-	-rm -f url.lexc *.tmp.*
+	-rm -f url.lexc *.tmp*
+	-rm -f *.relabel lexicon-tags.* lexicon-sigma.*
 	-$(MAKE) -C $(srcdir)/ext-TRmorph clean
 
 include $(srcdir)/Makefile.modifications-phon.am
