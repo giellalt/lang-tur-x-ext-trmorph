@@ -1,15 +1,15 @@
 The Turkish morphology and tools
 ==========================================
 
-[![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-tur)](https://github.com/giellalt/lang-tur/issues)
-[![Build Status](https://github.com/giellalt/lang-tur/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-tur/actions)
-[![License](https://img.shields.io/github/license/giellalt/lang-tur)](https://raw.githubusercontent.com/giellalt/lang-tur/develop/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-tur-x-ext-trmorph)](https://github.com/giellalt/lang-tur-x-ext-trmorph/issues)
+[![Build Status](https://github.com/giellalt/lang-tur-x-ext-trmorph/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-tur-x-ext-trmorph/actions)
+[![License](https://img.shields.io/github/license/giellalt/lang-tur-x-ext-trmorph)](https://raw.githubusercontent.com/giellalt/lang-tur-x-ext-trmorph/main/LICENSE)
 
 This repository contains finite state source files for the Turkish language,
 for building morphological analysers, proofing tools
 and dictionaries. The data and implementation are licenced under __LICENCE__
 licence, also detailed in the
-[LICENCE](https://github.com/giellalt/lang-tur/blob/develop/LICENCE). The
+[LICENSE](https://github.com/giellalt/lang-tur-x-ext-trmorph/blob/main/LICENSE). The
 authors named in the AUTHORS file are available to grant other licencing
 choices.
 
@@ -66,18 +66,18 @@ Downloading
 
 Using Git:
 ```
-git clone https://github.com/giellalt/lang-tur
+git clone https://github.com/giellalt/lang-tur-x-ext-trmorph
 ```
 
 Using Subversion:
 ```
-svn checkout https://github.com/giellalt/lang-tur.git/trunk lang-tur
+svn checkout https://github.com/giellalt/lang-tur-x-ext-trmorph.git/trunk lang-tur-x-ext-trmorph
 ```
 
 Building and installation
 -------------------------
 
-[INSTALL](https://github.com/giellalt/lang-tur/blob/develop/INSTALL)
+[INSTALL](https://github.com/giellalt/lang-tur-x-ext-trmorph/blob/main/INSTALL)
 describes the GNU build system in detail, but for most users it is the usual:
 
 ```sh
