@@ -3,7 +3,7 @@ The Turkish morphology and tools
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-tur-x-ext-trmorph)](https://github.com/giellalt/lang-tur-x-ext-trmorph/issues)
 [![Build Status](https://github.com/giellalt/lang-tur-x-ext-trmorph/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-tur-x-ext-trmorph/actions)
-[![License](https://img.shields.io/github/license/giellalt/lang-tur-x-ext-trmorph)](https://raw.githubusercontent.com/giellalt/lang-tur-x-ext-trmorph/main/LICENSE)
+[![License](https://img.shields.io/github/license/giellalt/lang-tur-x-ext-trmorph)](https://github.com/giellalt/lang-tur-x-ext-trmorph/blob/main/LICENSE)
 
 This repository contains finite state source files for the Turkish language,
 for building morphological analysers, proofing tools
