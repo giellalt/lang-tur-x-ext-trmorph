@@ -30,7 +30,7 @@ Documentation
 
 Documentation can be found at:
 
--   <https://giellalt.uit.no/lang/turdoc/index.html>
+- [Language specific documentation](https://giellalt.github.io/lang-tur-x-ext-trmorph/)
 -   <https://giellalt.uit.no/index.html>
 
 Core dependencies
