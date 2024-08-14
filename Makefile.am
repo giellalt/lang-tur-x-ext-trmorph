@@ -21,7 +21,7 @@ banner:
 test: check
 
 update:
-	git subtree pull --prefix src/fst/ext-TRmorph https://github.com/coltekin/TRmorph.git master --squash
+	git subtree pull --prefix src/fst/morphology/ext-TRmorph https://github.com/coltekin/TRmorph.git master --squash
 
 # recurse all make devs just
 dev:
