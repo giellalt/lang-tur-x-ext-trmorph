@@ -5,6 +5,7 @@
 [![License](https://img.shields.io/github/license/giellalt/lang-tur-x-ext-trmorph)](https://github.com/giellalt/lang-tur-x-ext-trmorph/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-tur)](https://github.com/giellalt/lang-tur/issues)
 [![Build Status](https://builds.giellalt.org/api/badge/lang-tur-x-ext-trmorph?label=CI)](https://builds.giellalt.org/pipelines/lang-tur-x-ext-trmorph/builds/latest)
+[![Glottolog](https://img.shields.io/badge/Glottolog-green)](https://glottolog.org/resource/languoid/id/__GLOTTOLOG_ID__)
 
 This page documents the work on the **Turkish language model**. 
 
