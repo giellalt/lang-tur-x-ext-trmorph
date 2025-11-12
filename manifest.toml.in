@@ -1,6 +1,3 @@
-spellername = "@GLANGUAGE@"
-spellerversion = "@SPELLERVERSION@"
-
 # Name of the speller package in various languages.
 # The default is English + autonym:
 [speller.name]
@@ -19,3 +16,15 @@ system_pkg_id = "no.divvun.MacDivvun.tur-x-ext-trmorph"
 [windows]
 system_product_code = "{1F9480A0-E8FA-4996-B11D-38989198826D}_is1"
 # extra_locales = { tr = "tur-x-ext-trmorph" }
+
+[package.speller]
+name = "@GLANGUAGE@"
+version = "@SPELLERVERSION@"
+
+[package.grammar]
+name = "@GLANGUAGE@"
+version = "@GRAMCHECKVERSION@"
+
+[package.tts-text-proc]
+name = "@GLANGUAGE@"
+version = "@TTSTEXTPROCVERSION@"
