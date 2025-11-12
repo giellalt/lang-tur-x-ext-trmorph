@@ -1,17 +1,14 @@
-spellername = "Turkish (trmorph)"
-spellerversion = "0.1.1"
-
 # Name of the speller package in various languages.
 # The default is English + autonym:
 [speller.name]
-en = "Turkish (trmorph) spellchecker (trmorph)"
-tr = "Autonym spellchecker (trmorph)"
+en = "Turkish (trmorph spellchecker (trmorph"
+tr = "Autonym spellchecker (trmorph"
 
 # Description of the speller package in various languages.
 # The default is English + autonym:
 [speller.description]
-en = "A spellchecker for Turkish (trmorph), made by members of the language community, and by the Divvun and Giellatekno groups at UiT The Arctic University of Norway"
-tr = "TRANSLATE: A spellchecker for Turkish (trmorph), made by members of the language community, and by the Divvun and Giellatekno groups at UiT The Arctic University of Norway"
+en = "A spellchecker for Turkish (trmorph, made by members of the language community, and by the Divvun and Giellatekno groups at UiT The Arctic University of Norway"
+tr = "TRANSLATE: A spellchecker for Turkish (trmorph, made by members of the language community, and by the Divvun and Giellatekno groups at UiT The Arctic University of Norway"
 
 [macos]
 system_pkg_id = "no.divvun.MacDivvun.tur-x-ext-trmorph"
@@ -19,3 +16,15 @@ system_pkg_id = "no.divvun.MacDivvun.tur-x-ext-trmorph"
 [windows]
 system_product_code = "{1F9480A0-E8FA-4996-B11D-38989198826D}_is1"
 # extra_locales = { tr = "tur-x-ext-trmorph" }
+
+[package.speller]
+name = "Turkish (trmorph"
+version = "0.1.1"
+
+[package.grammar]
+name = "Turkish (trmorph"
+version = "0.1.0"
+
+[package.tts-text-proc]
+name = "Turkish (trmorph"
+version = "0.1.0"
