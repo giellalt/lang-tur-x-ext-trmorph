@@ -133,7 +133,6 @@ subdir = docs
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/m4/ax_check_gnu_make.m4 \
 	$(top_srcdir)/m4/ax_compare_version.m4 \
-	$(top_srcdir)/m4/ax_python_module.m4 \
 	$(top_srcdir)/m4/giella-config-files.m4 \
 	$(top_srcdir)/m4/giella-macros.m4 $(top_srcdir)/m4/hfst.m4 \
 	$(top_srcdir)/configure.ac
@@ -193,6 +192,7 @@ am__installdirs = "$(DESTDIR)$(docdir)"
 DATA = $(doc_DATA)
 am__tagged_files = $(HEADERS) $(SOURCES) $(TAGS_FILES) $(LISP)
 am__DIST_COMMON = $(srcdir)/Makefile.in \
+	$(top_srcdir)/../giella-core/am-shared/devtest-include.am \
 	$(top_srcdir)/../giella-core/am-shared/docs-dir-include.am \
 	$(top_srcdir)/../giella-core/am-shared/silent_build-include.am
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
@@ -227,12 +227,12 @@ DEFAULT_ORTH = @DEFAULT_ORTH@
 DEFAULT_REVERCI = @DEFAULT_REVERCI@
 DEFAULT_SPELLER_MINIMISATION = @DEFAULT_SPELLER_MINIMISATION@
 DEFAULT_WS = @DEFAULT_WS@
-DEFAULT_XFST = @DEFAULT_XFST@
 DEFS = @DEFS@
 DIALECTS = @DIALECTS@
 DIFFTOOL = @DIFFTOOL@
-DIVVUN_ACCURACY = @DIVVUN_ACCURACY@
+DIVVUNSPELL = @DIVVUNSPELL@
 DIVVUN_CHECKER = @DIVVUN_CHECKER@
+DIVVUN_RUNTIME = @DIVVUN_RUNTIME@
 DIVVUN_VALIDATE_SUGGEST = @DIVVUN_VALIDATE_SUGGEST@
 ECHO_C = @ECHO_C@
 ECHO_N = @ECHO_N@
@@ -250,10 +250,17 @@ GLANGUAGE = @GLANGUAGE@
 GRAMCHECKVERSION = @GRAMCHECKVERSION@
 GTCORE = @GTCORE@
 GTCORESH = @GTCORESH@
+GTGRAMTOOL = @GTGRAMTOOL@
 GTLANG = @GTLANG@
 GTLANG2 = @GTLANG2@
 GTLANGUAGE = @GTLANGUAGE@
+GTLEMMATEST = @GTLEMMATEST@
+GTMORPHTEST = @GTMORPHTEST@
+GTMULTICHARTEST = @GTMULTICHARTEST@
+GTPARADIGMTEST = @GTPARADIGMTEST@
+GTSPELLTEST = @GTSPELLTEST@
 GZIP = @GZIP@
+HEAD = @HEAD@
 HFST_COMPOSE = @HFST_COMPOSE@
 HFST_COMPOSE_INTERSECT = @HFST_COMPOSE_INTERSECT@
 HFST_CONCATENATE = @HFST_CONCATENATE@
@@ -297,17 +304,17 @@ HFST_TOKENISE = @HFST_TOKENISE@
 HFST_TWOLC = @HFST_TWOLC@
 HFST_TXT2FST = @HFST_TXT2FST@
 HFST_XFST = @HFST_XFST@
+HYPHVERSION = @HYPHVERSION@
 INSTALL = @INSTALL@
 INSTALL_DATA = @INSTALL_DATA@
 INSTALL_PROGRAM = @INSTALL_PROGRAM@
 INSTALL_SCRIPT = @INSTALL_SCRIPT@
 INSTALL_STRIP_PROGRAM = @INSTALL_STRIP_PROGRAM@
 JV = @JV@
-LEXC = @LEXC@
 LEXREF_IN_XFSCRIPT = @LEXREF_IN_XFSCRIPT@
 LIBOBJS = @LIBOBJS@
 LIBS = @LIBS@
-LOOKUP = @LOOKUP@
+LOG_VIEWER = @LOG_VIEWER@
 LTLIBOBJS = @LTLIBOBJS@
 MAKEINFO = @MAKEINFO@
 MKDIR_P = @MKDIR_P@
@@ -325,6 +332,7 @@ PACKAGE_VERSION = @PACKAGE_VERSION@
 PATGEN = @PATGEN@
 PATH_SEPARATOR = @PATH_SEPARATOR@
 PERL = @PERL@
+PIPX = @PIPX@
 PKG_CONFIG = @PKG_CONFIG@
 PKG_CONFIG_LIBDIR = @PKG_CONFIG_LIBDIR@
 PKG_CONFIG_PATH = @PKG_CONFIG_PATH@
@@ -341,11 +349,17 @@ SAXONJAR = @SAXONJAR@
 SED = @SED@
 SEE = @SEE@
 SET_MAKE = @SET_MAKE@
+SHARED_STUFF_CFLAGS = @SHARED_STUFF_CFLAGS@
+SHARED_STUFF_LIBS = @SHARED_STUFF_LIBS@
 SHELL = @SHELL@
 SPELLERVERSION = @SPELLERVERSION@
+SPELLER_DESC_ENG = @SPELLER_DESC_ENG@
+SPELLER_DESC_NATIVE = @SPELLER_DESC_NATIVE@
+SPELLER_NAME_ENG = @SPELLER_NAME_ENG@
+SPELLER_NAME_NATIVE = @SPELLER_NAME_NATIVE@
 STRIP = @STRIP@
 TAR = @TAR@
-TWOLC = @TWOLC@
+TTSTEXTPROCVERSION = @TTSTEXTPROCVERSION@
 UCONV = @UCONV@
 VERSION = @VERSION@
 VISLCG3 = @VISLCG3@
@@ -355,7 +369,6 @@ VOIKKOHYPHENATE = @VOIKKOHYPHENATE@
 VOIKKOSPELL = @VOIKKOSPELL@
 VOIKKOVFSTC = @VOIKKOVFSTC@
 WGET = @WGET@
-XFST = @XFST@
 XZ = @XZ@
 ZIP = @ZIP@
 abs_builddir = @abs_builddir@
@@ -378,6 +391,7 @@ docdir = @docdir@
 dvidir = @dvidir@
 exec_prefix = @exec_prefix@
 gt_SHARED_common = @gt_SHARED_common@
+gt_SHARED_mul = @gt_SHARED_mul@
 host = @host@
 host_alias = @host_alias@
 host_cpu = @host_cpu@
@@ -385,6 +399,7 @@ host_os = @host_os@
 host_vendor = @host_vendor@
 htmldir = @htmldir@
 ifGNUmake = @ifGNUmake@
+ifnGNUmake = @ifnGNUmake@
 includedir = @includedir@
 infodir = @infodir@
 install_sh = @install_sh@
@@ -699,7 +714,7 @@ MORE_VERBOSITY = $(if $(strip $(filter-out false,$(AM_V_P))),-v,-q)
 all: all-am
 
 .SUFFIXES:
-$(srcdir)/Makefile.in:  $(srcdir)/Makefile.am $(top_srcdir)/../giella-core/am-shared/docs-dir-include.am $(top_srcdir)/../giella-core/am-shared/silent_build-include.am $(am__configure_deps)
+$(srcdir)/Makefile.in:  $(srcdir)/Makefile.am $(top_srcdir)/../giella-core/am-shared/docs-dir-include.am $(top_srcdir)/../giella-core/am-shared/silent_build-include.am $(top_srcdir)/../giella-core/am-shared/devtest-include.am $(am__configure_deps)
 	@for dep in $?; do \
 	  case '$(am__configure_deps)' in \
 	    *$$dep*) \
@@ -719,7 +734,7 @@ Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	    echo ' cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@ $(am__maybe_remake_depfiles)'; \
 	    cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@ $(am__maybe_remake_depfiles);; \
 	esac;
-$(top_srcdir)/../giella-core/am-shared/docs-dir-include.am $(top_srcdir)/../giella-core/am-shared/silent_build-include.am $(am__empty):
+$(top_srcdir)/../giella-core/am-shared/docs-dir-include.am $(top_srcdir)/../giella-core/am-shared/silent_build-include.am $(top_srcdir)/../giella-core/am-shared/devtest-include.am $(am__empty):
 
 $(top_builddir)/config.status: $(top_srcdir)/configure $(CONFIG_STATUS_DEPENDENCIES)
 	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
@@ -936,7 +951,7 @@ regenerate-markdown: generate-markdown
 
 # Generate endpoint json file for shield.io lemma count badge.
 # Only to be stored in the gh-pages branch, ignored in main.
-$(srcdir)/lemmacount.json: $(top_srcdir)/src/fst/stems/*.lexc
+$(srcdir)/lemmacount.json:
 	$(AM_V_GEN)$(GTCORE)/scripts/make-lemmacount.json.sh $(abs_top_srcdir) > $@
 
 # Generate a maturity.json file as endpoint for the maturity badge.
@@ -944,7 +959,7 @@ $(srcdir)/maturity.json:
 	$(AM_V_GEN)$(GTCORE)/scripts/make-maturity.json.sh $(REPONAME) > $@
 
 # Convert source filenames to extracted documentation filenames, VPATH safe:
-# ../../../src/fst/stems/adverbs.lexc => src-fst-stems-adverbs.lexc.md
+# ../../../src/fst/morphology/stems/adverbs.lexc => src-fst-morphology-stems-adverbs.lexc.md
 define src2md
 $(addsuffix .md,$(subst /,-,$(subst $(top_srcdir)/,,$(1))))
 endef
@@ -974,9 +989,14 @@ $(foreach f,$(DOCSRC_XEROX),$(eval $(call make_md_files,$(f))))
 $(foreach f,$(DOCSRC_CG3),$(eval $(call make_md_files_cg3,$(f))))
 
 # Collect all target files into one big MD file:
+# Remove the VPATH prefix to create the header for each file/chapter:
 $(ALLINONE_MD_PAGE): $(VPATH_MDFILES)
-	$(AM_V_GEN)printf "# $(GLANGUAGE) description \n\nAll documents in one file\n\n" \
-	| cat - $(VPATH_MDFILES) > $@
+	$(AM_V_GEN)printf "# $(GLANGUAGE) language model documentation\n\nAll doc-comment documentation in one large file.\n" > $@
+	for f in $(VPATH_MDFILES); do \
+		header=$${f#"$(top_srcdir)/docs/"};\
+		printf "\n---\n\n## $$header \n\n" >> $@ ;\
+		sed -e 's|^#|##|g' $$f >> $@ ;\
+	done
 
 $(LINKS):
 	$(AM_V_GEN)for doc2md in $(DOCSRC_MDFILES) ; do \
@@ -990,27 +1010,42 @@ $(LINKS):
 		d2=`echo "$$d" | cut -d '/' -f 2` ;\
 		d3=`echo "$$d" | cut -d '/' -f 3` ;\
 		d4=`echo "$$d" | cut -d '/' -f 4` ;\
+		d5=`echo "$$d" | cut -d '/' -f 5` ;\
 		if test "x$$d1" != "x$$oldd1" ; then \
 			echo "* \`$$d1/\`" ;\
 			oldd1=$$d1 ;\
+			oldd2="";\
+			oldd3="";\
+			oldd4="";\
 		fi ; \
 		if test "x$$d2" = x ; then \
 			echo "    * [$$docname]($$html) ([src]($(REPOURL)/$$doc))" ;\
 		elif test "x$$d2" != "x$$oldd2" ; then \
 			echo "    * \`$$d2/\`" ;\
 			oldd2=$$d2 ;\
+			oldd3="";\
+			oldd4="";\
+			oldd5="";\
 		fi ; \
 		if test "x$$d3" = x -a "x$$d2" != x; then \
 			echo "        * [$$docname]($$html) ([src]($(REPOURL)/$$doc))" ;\
 		elif test "x$$d3" != "x$$oldd3" ; then \
 			echo "        * \`$$d3/\`" ;\
 			oldd3=$$d3 ;\
+			oldd4="";\
 		fi ; \
 		if test "x$$d4" = x -a "x$$d3" != x ; then \
 			echo "            * [$$docname]($$html) ([src]($(REPOURL)/$$doc))" ;\
 		elif test "x$$d4" != "x$$oldd4" ; then \
 			echo "            * \`$$d4/\`" ;\
 			oldd4=$$d4 ;\
+			oldd5="";\
+		fi ; \
+		if test "x$$d5" = x -a "x$$d4" != x ; then \
+			echo "                * [$$docname]($$html) ([src]($(REPOURL)/$$doc))" ;\
+		elif test "x$$d5" != "x$$oldd5" ; then \
+			echo "                * \`$$d5/\`" ;\
+			oldd5=$$d5 ;\
 		fi ; \
 	done > $@
 
@@ -1031,6 +1066,30 @@ clean-local:
 	$(AM_V_at)-rm -f docsrc.tmp mdfiles.tmp empty.md
 
 # vim: set ft=automake:
+
+.PHONY: devtest devtest-recursive devtest-local
+
+devtest: devtest-recursive
+
+devtest-recursive:
+	@-for subdir in $(SUBDIRS); do \
+		if test "$$subdir" = . ; then \
+			continue; \
+		else   \
+			($(am__cd) $$subdir && $(MAKE) $(AM_MAKEFLAGS) $@) \
+		fi; \
+	done; \
+	$(MAKE) $(AM_FLAGS) devtest-local
+
+devtest-local:
+	@-for t in $(TESTS) ; do \
+		echo "TEST: $$t" ;\
+		if test -f "./$$t" ; then \
+			srcdir=$(srcdir) GIELLA_CORE=$(GIELLA_CORE) "./$$t" ;\
+		else \
+			srcdir=$(srcdir) GIELLA_CORE=$(GIELLA_CORE) "$(srcdir)/$$t" ;\
+		fi ;\
+	done
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

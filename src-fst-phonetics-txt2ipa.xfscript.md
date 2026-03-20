@@ -161,7 +161,4 @@ retracted tongue root			_q
 
 * * *
 
-<small>This (part of) documentation was generated from [src/phonetics/txt2ipa.xfscript](https://github.com/giellalt/lang-tur-x-ext-trmorph/blob/main/src/phonetics/txt2ipa.xfscript)</small>
-
----
-
+<small>This (part of) documentation was generated from [src/fst/phonetics/txt2ipa.xfscript](https://github.com/giellalt/lang-tur-x-ext-trmorph/blob/main/src/fst/phonetics/txt2ipa.xfscript)</small>
