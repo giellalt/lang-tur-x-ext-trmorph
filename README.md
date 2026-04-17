@@ -1,12 +1,12 @@
 The Turkish morphology and tools
 ==========================================
 
-[![Maturity](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-tur-x-ext-trmorph%2Fgh-pages%2Fbadgedata%2Ffst-maturity.json)](https://giellalt.github.io/MaturityClassification.html)
-![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-tur-x-ext-trmorph%2Fgh-pages%2Fbadgedata%2Ffst-lemmacount.json)
+[![Maturity](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-tur-x-ext-trmorph%2Fmain%2Fdocs%2Fbadgedata%2Ffst-maturity.json)](https://giellalt.github.io/MaturityClassification.html)
+![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-tur-x-ext-trmorph%2Fmain%2Fdocs%2Fbadgedata%2Ffst-lemmacount.json)
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-tur-x-ext-trmorph)](https://github.com/giellalt/lang-tur-x-ext-trmorph/issues)
 [![License](https://img.shields.io/github/license/giellalt/lang-tur-x-ext-trmorph)](https://github.com/giellalt/lang-tur-x-ext-trmorph/blob/main/LICENSE)
-[![Doc Build Status](https://github.com/giellalt/lang-tur-x-ext-trmorph/workflows/Docs/badge.svg)](https://github.com/giellalt/lang-tur-x-ext-trmorph/actions)
-[![CI/CD Build Status](https://divvun-tc.giellalt.org/api/github/v1/repository/giellalt/lang-tur-x-ext-trmorph/main/badge.svg)](https://divvun-tc.giellalt.org/api/github/v1/repository/giellalt/lang-tur-x-ext-trmorph/main/latest)
+[![Doc build](https://img.shields.io/github/actions/workflow/status/giellalt/lang-tur-x-ext-trmorph/docs.yml?logo=github&label=DocCI)](https://github.com/giellalt/lang-tur-x-ext-trmorph/actions/workflows/docs.yml)
+[![Build Status](https://builds.giellalt.org/api/badge/lang-tur-x-ext-trmorph?logo=buildkite&label=CoreCI)](https://builds.giellalt.org/pipelines/lang-tur-x-ext-trmorph/builds/latest)
 
 Download nightly / CI/CD installation packages for testing (contains the core zhfst file(s)):
 
