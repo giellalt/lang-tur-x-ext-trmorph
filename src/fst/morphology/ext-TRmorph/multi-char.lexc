@@ -1,3 +1,5 @@
+#ifndef MULTI_CHAR_LEXC
+#define MULTI_CHAR_LEXC
 Multichar_Symbols ^A ^I ^K ^C ^c ^p ^k ^D ^t ^g ^G
                   ^(A) ^(I) ^(s) ^(n) ^(y) ^(ş)
                   ^pA ^pI ^pO ^pU ^pÂ ^pÔ ^pÛ ^pÎ
@@ -13,4 +15,5 @@ Multichar_Symbols ^A ^I ^K ^C ^c ^p ^k ^D ^t ^g ^G
                   @miSPC @opt3
                   ^NS ^NNS ^S
                   ^sFUV ^sFRV ^sBUV ^sBRV ^sVC ^sUC
-!                   e,i   ü,ö   a,ı   o,u   
+!                   e,i   ü,ö   a,ı   o,u
+#endif

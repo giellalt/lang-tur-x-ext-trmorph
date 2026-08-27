@@ -597,8 +597,8 @@ LEXICON Nfamily
 %<N%>:@RB   Ncont;
 %<N%>:@RB   NfamCont;
 #if (ALLOW_MREDUP == 1)
-%<N%::mredup%>:@MREDUP@RB    Ncont;
-%<N%::mredup%>:@MREDUP@RB    NfamCont;
+%<N%:mredup%>:@MREDUP@RB    Ncont;
+%<N%:mredup%>:@MREDUP@RB    NfamCont;
 #endif
 
 LEXICON NfamCont

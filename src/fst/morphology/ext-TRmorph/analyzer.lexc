@@ -94,4 +94,4 @@ EndQuote;
 ! Include the definition of morphological process
 !
 
-#include "morph.cpp.lexc"
+#include "morph.lexc"
