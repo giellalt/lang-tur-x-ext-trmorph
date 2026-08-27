@@ -1,0 +1,30 @@
+# Marks a closed list of TRmorph lemmas as +Err/Orth (GiellaLT's tag for
+# "recognized, but non-standard/orthographically questionable form").
+#
+# The subtree (ext-TRmorph/lexicon/*) marks these lemmas as non-standard or
+# colloquial only in "!"-comments, e.g.:
+#   trampolin             N;    ! non-standard/alternative
+# Comments carry no weight in the compiled analyser, so without this filter
+# such words analyse identically to fully standard vocabulary. Since we
+# don't modify subtree source, we mark them here instead, post-composition,
+# by matching on the lemma+POS the analyser actually produces.
+#
+# To refresh this list after an ext-TRmorph update:
+#   cd ext-TRmorph && grep -nE '!\s*(non-?std|non-?standard|colloq|substandard)' lexicon/*
+# then, for each citation form found, verify the exact analysed lemma+POS
+# with (rebuild trmorph.fst first if needed):
+#   echo WORD | /usr/local/bin/flookup ext-TRmorph/trmorph.fst
+# and add the resulting "lemma+POS" (or "lemma+POS+prop" etc.) string below.
+# Note some source entries embed morphophonemic markers not meant to be
+# typed (e.g. "pütürü^k" -> citation form "pütürük"); test the plain form.
+
+[..] -> {+Err/Orth} || [
+    {trampolin+N} | {pütürük+N} | {kokoş+N} | {omo+N} | {akord+N} |
+    {cihad+N} | {elektromagnetizma+N} | {mescid+N} | {tirad+N} |
+    {fondip+N} | {etüd+N} | {garni+N} | {papiş+N} | {peluş+N} |
+    {planjon+N} | {aga+N} | {wiki+N} | {hale+N} | {hâle+N} |
+    {Mersedes+N+prop} |
+    {bumbuz+Adj} | {direkman+Adj} | {kıytırık+Adj} | {tontoş+Adj} |
+    {otomatikman+Adv} | {ailecek+Adv} | {iyicene+Adv} | {küttedek+Adv} |
+    {pattadak+Adv}
+] _ ;
