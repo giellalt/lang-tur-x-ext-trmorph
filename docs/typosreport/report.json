@@ -1,0 +1,5161 @@
+{
+  "metadata": {
+    "info": {
+      "locale": "tr",
+      "title": [
+        {
+          "lang": null,
+          "$value": "Turkish (trmorph) spellchecker (trmorph)"
+        }
+      ],
+      "description": "A spellchecker for Turkish (trmorph), made by members of the language community, and by the Divvun and Giellatekno groups at UiT The Arctic University of Norway.",
+      "producer": "Giellatekno/Divvun/UiT contributors"
+    },
+    "acceptor": {
+      "type": "general",
+      "id": "acceptor.default.hfst",
+      "title": [
+        {
+          "lang": null,
+          "$value": "Turkish (trmorph) speller lexicon"
+        }
+      ],
+      "description": "Turkish (trmorph) speller lexicon compiled with HFST.",
+      "continuation": null
+    },
+    "errmodel": {
+      "id": "errmodel.default.hfst",
+      "title": [
+        {
+          "lang": null,
+          "$value": "Turkish (trmorph) error model"
+        }
+      ],
+      "description": "Error model for Turkish (trmorph)."
+    }
+  },
+  "config": {
+    "n-best": 10,
+    "max-weight": 10000.0,
+    "beam": null,
+    "reweight": {
+      "start-penalty": 10.0,
+      "end-penalty": 10.0,
+      "mid-penalty": 5.0,
+      "curve": null
+    },
+    "node-pool-size": 128,
+    "recase": true,
+    "completion-marker": null,
+    "astar-lookahead": false,
+    "search-dedup": true,
+    "mutator-subsets": true,
+    "search-budget": null,
+    "word-split-weight": null,
+    "boundary-edit-weight": null
+  },
+  "summary": {
+    "total_words": 422,
+    "first_position": 0,
+    "top_five": 0,
+    "any_position": 0,
+    "no_suggestions": 422,
+    "only_wrong": 0,
+    "false_accept": 0,
+    "true_positive": 422,
+    "false_negative": 0,
+    "true_negative": 0,
+    "slowest_lookup": {
+      "secs": 0,
+      "subsec_nanos": 8645833
+    },
+    "fastest_lookup": {
+      "secs": 0,
+      "subsec_nanos": 464542
+    },
+    "average_time": {
+      "secs": 0,
+      "subsec_nanos": 1191016
+    },
+    "average_time_95pc": {
+      "secs": 0,
+      "subsec_nanos": 1030165
+    },
+    "average_position_of_correct": 0.0,
+    "average_suggestions_for_correct": 0.0
+  },
+  "results": [
+    {
+      "input": "abi",
+      "expected": "ağabey",
+      "distance": 4,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1153875
+      },
+      "false_accept": false
+    },
+    {
+      "input": "acaip",
+      "expected": "acayip",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1064834
+      },
+      "false_accept": false
+    },
+    {
+      "input": "acenta",
+      "expected": "acente",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1027291
+      },
+      "false_accept": false
+    },
+    {
+      "input": "acitasyon",
+      "expected": "ajitasyon",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 4398625
+      },
+      "false_accept": false
+    },
+    {
+      "input": "adele",
+      "expected": "adale",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1248416
+      },
+      "false_accept": false
+    },
+    {
+      "input": "afaroz",
+      "expected": "aforoz",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1211541
+      },
+      "false_accept": false
+    },
+    {
+      "input": "aferim",
+      "expected": "aferin",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 3625292
+      },
+      "false_accept": false
+    },
+    {
+      "input": "afferin",
+      "expected": "aferin",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 916291
+      },
+      "false_accept": false
+    },
+    {
+      "input": "afilli",
+      "expected": "afili",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 841416
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ahçı",
+      "expected": "aşçı",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 705750
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ahlağa",
+      "expected": "ahlaka",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 936417
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ahlağı",
+      "expected": "ahlakı",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1029750
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ahlağın",
+      "expected": "ahlakın",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1137500
+      },
+      "false_accept": false
+    },
+    {
+      "input": "akapunktur",
+      "expected": "akupunktur",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1673208
+      },
+      "false_accept": false
+    },
+    {
+      "input": "akibet",
+      "expected": "akıbet",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1119958
+      },
+      "false_accept": false
+    },
+    {
+      "input": "akrapol",
+      "expected": "akropol",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1065125
+      },
+      "false_accept": false
+    },
+    {
+      "input": "aliminyum",
+      "expected": "alüminyum",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1460708
+      },
+      "false_accept": false
+    },
+    {
+      "input": "alimünyum",
+      "expected": "alüminyum",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 7629000
+      },
+      "false_accept": false
+    },
+    {
+      "input": "Allahü Teala",
+      "expected": "Allahutaala",
+      "distance": 4,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 2616375
+      },
+      "false_accept": false
+    },
+    {
+      "input": "allerji",
+      "expected": "alerji",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1425125
+      },
+      "false_accept": false
+    },
+    {
+      "input": "alt yapı",
+      "expected": "altyapı",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1149500
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ambians",
+      "expected": "ambiyans",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1108458
+      },
+      "false_accept": false
+    },
+    {
+      "input": "an ve an",
+      "expected": "anbean",
+      "distance": 3,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1267042
+      },
+      "false_accept": false
+    },
+    {
+      "input": "anfi",
+      "expected": "amfi",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 900709
+      },
+      "false_accept": false
+    },
+    {
+      "input": "Ankara'lı",
+      "expected": "Ankaralı",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 2068416
+      },
+      "false_accept": false
+    },
+    {
+      "input": "anotomi",
+      "expected": "anatomi",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1066958
+      },
+      "false_accept": false
+    },
+    {
+      "input": "Antartika",
+      "expected": "Antarktika",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 2790167
+      },
+      "false_accept": false
+    },
+    {
+      "input": "antiparantez",
+      "expected": "antrparantez",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1628542
+      },
+      "false_accept": false
+    },
+    {
+      "input": "antreman",
+      "expected": "antrenman",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1210666
+      },
+      "false_accept": false
+    },
+    {
+      "input": "apandist",
+      "expected": "apandisit",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1463667
+      },
+      "false_accept": false
+    },
+    {
+      "input": "aparatif",
+      "expected": "aperitif",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1099375
+      },
+      "false_accept": false
+    },
+    {
+      "input": "aperatif",
+      "expected": "aperitif",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 4136958
+      },
+      "false_accept": false
+    },
+    {
+      "input": "arasıra",
+      "expected": "ara sıra",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 3351208
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ardarda",
+      "expected": "art arda",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1590292
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ardısıra",
+      "expected": "ardı sıra",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1286916
+      },
+      "false_accept": false
+    },
+    {
+      "input": "arefe",
+      "expected": "arife",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1131750
+      },
+      "false_accept": false
+    },
+    {
+      "input": "arozöz",
+      "expected": "arazöz",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 986416
+      },
+      "false_accept": false
+    },
+    {
+      "input": "aşcı",
+      "expected": "aşçı",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1011458
+      },
+      "false_accept": false
+    },
+    {
+      "input": "aşil tendonu",
+      "expected": "Aşil tendonu",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1204292
+      },
+      "false_accept": false
+    },
+    {
+      "input": "asvalt",
+      "expected": "asfalt",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1582375
+      },
+      "false_accept": false
+    },
+    {
+      "input": "at binmek",
+      "expected": "ata binmek",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1040500
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ataç",
+      "expected": "ataş",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1060792
+      },
+      "false_accept": false
+    },
+    {
+      "input": "Atatürkçülük'ü",
+      "expected": "Atatürkçülüğü",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 2349667
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ateşe",
+      "expected": "ataşe",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1079333
+      },
+      "false_accept": false
+    },
+    {
+      "input": "atmış",
+      "expected": "altmış",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1124375
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ayrıyeten",
+      "expected": "ayrıca",
+      "distance": 5,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1204792
+      },
+      "false_accept": false
+    },
+    {
+      "input": "Azarbaycan",
+      "expected": "Azerbaycan",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 2135583
+      },
+      "false_accept": false
+    },
+    {
+      "input": "Azarbeycan",
+      "expected": "Azerbaycan",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 2026833
+      },
+      "false_accept": false
+    },
+    {
+      "input": "Azerbeycan",
+      "expected": "Azerbaycan",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1708625
+      },
+      "false_accept": false
+    },
+    {
+      "input": "bahçevan",
+      "expected": "bahçıvan",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1186667
+      },
+      "false_accept": false
+    },
+    {
+      "input": "bahçivan",
+      "expected": "bahçıvan",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 840542
+      },
+      "false_accept": false
+    },
+    {
+      "input": "banane",
+      "expected": "bana ne",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1074333
+      },
+      "false_accept": false
+    },
+    {
+      "input": "barsak",
+      "expected": "bağırsak",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1385208
+      },
+      "false_accept": false
+    },
+    {
+      "input": "baya",
+      "expected": "bayağı",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 994625
+      },
+      "false_accept": false
+    },
+    {
+      "input": "benle",
+      "expected": "benimle",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1566584
+      },
+      "false_accept": false
+    },
+    {
+      "input": "beynelminel",
+      "expected": "beynelmilel",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 995500
+      },
+      "false_accept": false
+    },
+    {
+      "input": "bilader",
+      "expected": "birader",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1161292
+      },
+      "false_accept": false
+    },
+    {
+      "input": "bilimum",
+      "expected": "bilumum",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1355375
+      },
+      "false_accept": false
+    },
+    {
+      "input": "bilinç altı",
+      "expected": "bilinçaltı",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1522959
+      },
+      "false_accept": false
+    },
+    {
+      "input": "bilmemezlik",
+      "expected": "bilmezlik",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 801458
+      },
+      "false_accept": false
+    },
+    {
+      "input": "bilmemezlikten",
+      "expected": "bilmezlikten",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 956541
+      },
+      "false_accept": false
+    },
+    {
+      "input": "bir biri",
+      "expected": "birbiri",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 856542
+      },
+      "false_accept": false
+    },
+    {
+      "input": "bir çok",
+      "expected": "birçok",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 2013750
+      },
+      "false_accept": false
+    },
+    {
+      "input": "bir haber",
+      "expected": "bihaber",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1014417
+      },
+      "false_accept": false
+    },
+    {
+      "input": "bir kaç",
+      "expected": "birkaç",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 865167
+      },
+      "false_accept": false
+    },
+    {
+      "input": "birarada",
+      "expected": "bir arada",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 987917
+      },
+      "false_accept": false
+    },
+    {
+      "input": "biraraya",
+      "expected": "bir araya",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 2220125
+      },
+      "false_accept": false
+    },
+    {
+      "input": "birfiil",
+      "expected": "bilfiil",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 866167
+      },
+      "false_accept": false
+    },
+    {
+      "input": "birhaber",
+      "expected": "bihaber",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 813083
+      },
+      "false_accept": false
+    },
+    {
+      "input": "biribiri",
+      "expected": "birbiri",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 724750
+      },
+      "false_accept": false
+    },
+    {
+      "input": "birşey",
+      "expected": "bir şey",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1573583
+      },
+      "false_accept": false
+    },
+    {
+      "input": "biyolojist",
+      "expected": "biyolog",
+      "distance": 4,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 864042
+      },
+      "false_accept": false
+    },
+    {
+      "input": "bizle",
+      "expected": "bizimle",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 859916
+      },
+      "false_accept": false
+    },
+    {
+      "input": "bloğu",
+      "expected": "bloku",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 731459
+      },
+      "false_accept": false
+    },
+    {
+      "input": "bu gün",
+      "expected": "bugün",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 658167
+      },
+      "false_accept": false
+    },
+    {
+      "input": "buda",
+      "expected": "bu da",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 701834
+      },
+      "false_accept": false
+    },
+    {
+      "input": "buluğ",
+      "expected": "büluğ",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 817958
+      },
+      "false_accept": false
+    },
+    {
+      "input": "bumbar",
+      "expected": "mumbar",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 866750
+      },
+      "false_accept": false
+    },
+    {
+      "input": "burda",
+      "expected": "burada",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 2849125
+      },
+      "false_accept": false
+    },
+    {
+      "input": "by-pass",
+      "expected": "baypas",
+      "distance": 3,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 502375
+      },
+      "false_accept": false
+    },
+    {
+      "input": "büsküüt",
+      "expected": "bisküvi",
+      "distance": 3,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 739750
+      },
+      "false_accept": false
+    },
+    {
+      "input": "camii",
+      "expected": "cami",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1028167
+      },
+      "false_accept": false
+    },
+    {
+      "input": "cem etmek",
+      "expected": "cemetmek",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 842042
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ceryan",
+      "expected": "cereyan",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 916541
+      },
+      "false_accept": false
+    },
+    {
+      "input": "çiğ börek",
+      "expected": "çi börek",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 609459
+      },
+      "false_accept": false
+    },
+    {
+      "input": "civa",
+      "expected": "cıva",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 782667
+      },
+      "false_accept": false
+    },
+    {
+      "input": "civata",
+      "expected": "cıvata",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 845625
+      },
+      "false_accept": false
+    },
+    {
+      "input": "çünki",
+      "expected": "çünkü",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 623458
+      },
+      "false_accept": false
+    },
+    {
+      "input": "darp etmek",
+      "expected": "darbetmek",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1125125
+      },
+      "false_accept": false
+    },
+    {
+      "input": "def olmak",
+      "expected": "defolmak",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 777583
+      },
+      "false_accept": false
+    },
+    {
+      "input": "dersane",
+      "expected": "dershane",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1050750
+      },
+      "false_accept": false
+    },
+    {
+      "input": "devirdaim",
+      "expected": "devridaim",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1240209
+      },
+      "false_accept": false
+    },
+    {
+      "input": "dinazor",
+      "expected": "dinozor",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1171541
+      },
+      "false_accept": false
+    },
+    {
+      "input": "dispirator",
+      "expected": "distribütör",
+      "distance": 5,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 966292
+      },
+      "false_accept": false
+    },
+    {
+      "input": "distribitör",
+      "expected": "distribütör",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 952875
+      },
+      "false_accept": false
+    },
+    {
+      "input": "doğalgaz",
+      "expected": "doğal gaz",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 864208
+      },
+      "false_accept": false
+    },
+    {
+      "input": "Doğubeyazıt",
+      "expected": "Doğubayazıt",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1645458
+      },
+      "false_accept": false
+    },
+    {
+      "input": "düz yazı",
+      "expected": "düzyazı",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 708083
+      },
+      "false_accept": false
+    },
+    {
+      "input": "döküman",
+      "expected": "doküman",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 721875
+      },
+      "false_accept": false
+    },
+    {
+      "input": "egsos",
+      "expected": "egzoz",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 715291
+      },
+      "false_accept": false
+    },
+    {
+      "input": "egsoz",
+      "expected": "egzoz",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 974625
+      },
+      "false_accept": false
+    },
+    {
+      "input": "egzantrik",
+      "expected": "eksantrik",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 761334
+      },
+      "false_accept": false
+    },
+    {
+      "input": "egzos",
+      "expected": "egzoz",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 775292
+      },
+      "false_accept": false
+    },
+    {
+      "input": "egzost",
+      "expected": "egzoz",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 682667
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ehl-i beyt",
+      "expected": "ehlibeyit",
+      "distance": 3,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 817833
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ehlibeyt",
+      "expected": "ehlibeyit",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1291959
+      },
+      "false_accept": false
+    },
+    {
+      "input": "eksos",
+      "expected": "egzoz",
+      "distance": 3,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 945292
+      },
+      "false_accept": false
+    },
+    {
+      "input": "eksoz",
+      "expected": "egzoz",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 830250
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ekzantrik",
+      "expected": "eksantrik",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 991958
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ekzoz",
+      "expected": "egzoz",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 925292
+      },
+      "false_accept": false
+    },
+    {
+      "input": "entellektüel",
+      "expected": "entelektüel",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1201541
+      },
+      "false_accept": false
+    },
+    {
+      "input": "erezyon",
+      "expected": "erozyon",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1037917
+      },
+      "false_accept": false
+    },
+    {
+      "input": "eskaza",
+      "expected": "ezkaza",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 973416
+      },
+      "false_accept": false
+    },
+    {
+      "input": "eşki",
+      "expected": "ekşi",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 881000
+      },
+      "false_accept": false
+    },
+    {
+      "input": "eşkiya",
+      "expected": "eşkıya",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 853709
+      },
+      "false_accept": false
+    },
+    {
+      "input": "eşortman",
+      "expected": "eşofman",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 3483041
+      },
+      "false_accept": false
+    },
+    {
+      "input": "espiri",
+      "expected": "espri",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 862708
+      },
+      "false_accept": false
+    },
+    {
+      "input": "eşşek",
+      "expected": "eşek",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 807167
+      },
+      "false_accept": false
+    },
+    {
+      "input": "euro",
+      "expected": "avro",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1000500
+      },
+      "false_accept": false
+    },
+    {
+      "input": "evrağı",
+      "expected": "evrakı",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 3405542
+      },
+      "false_accept": false
+    },
+    {
+      "input": "evye",
+      "expected": "eviye",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 856084
+      },
+      "false_accept": false
+    },
+    {
+      "input": "eylence",
+      "expected": "eğlence",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 857041
+      },
+      "false_accept": false
+    },
+    {
+      "input": "farketmek",
+      "expected": "fark etmek",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 968042
+      },
+      "false_accept": false
+    },
+    {
+      "input": "farzetmek",
+      "expected": "farz etmek",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 8645833
+      },
+      "false_accept": false
+    },
+    {
+      "input": "fasülya",
+      "expected": "fasulye",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 751750
+      },
+      "false_accept": false
+    },
+    {
+      "input": "fasülye",
+      "expected": "fasulye",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 746917
+      },
+      "false_accept": false
+    },
+    {
+      "input": "felan",
+      "expected": "falan",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 873459
+      },
+      "false_accept": false
+    },
+    {
+      "input": "felsefik",
+      "expected": "felsefi",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 913583
+      },
+      "false_accept": false
+    },
+    {
+      "input": "Finli",
+      "expected": "Fin",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1326542
+      },
+      "false_accept": false
+    },
+    {
+      "input": "florasan",
+      "expected": "floresan",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 592667
+      },
+      "false_accept": false
+    },
+    {
+      "input": "fortmanto",
+      "expected": "portmanto",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 717667
+      },
+      "false_accept": false
+    },
+    {
+      "input": "gardolap",
+      "expected": "gardırop",
+      "distance": 3,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 2086208
+      },
+      "false_accept": false
+    },
+    {
+      "input": "gardrop",
+      "expected": "gardırop",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1024209
+      },
+      "false_accept": false
+    },
+    {
+      "input": "garez",
+      "expected": "garaz",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1041250
+      },
+      "false_accept": false
+    },
+    {
+      "input": "gasp etmek",
+      "expected": "gasbetmek",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 861667
+      },
+      "false_accept": false
+    },
+    {
+      "input": "gavat",
+      "expected": "kavat",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 870000
+      },
+      "false_accept": false
+    },
+    {
+      "input": "gay",
+      "expected": "gey",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 745208
+      },
+      "false_accept": false
+    },
+    {
+      "input": "genede",
+      "expected": "gene de",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 918125
+      },
+      "false_accept": false
+    },
+    {
+      "input": "glukoz",
+      "expected": "glikoz",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 556333
+      },
+      "false_accept": false
+    },
+    {
+      "input": "gluten",
+      "expected": "glüten",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 546666
+      },
+      "false_accept": false
+    },
+    {
+      "input": "grizü",
+      "expected": "grizu",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 612250
+      },
+      "false_accept": false
+    },
+    {
+      "input": "grızü",
+      "expected": "grizu",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 575666
+      },
+      "false_accept": false
+    },
+    {
+      "input": "görmemezlik",
+      "expected": "görmezlik",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 693709
+      },
+      "false_accept": false
+    },
+    {
+      "input": "görmemezlikten",
+      "expected": "görmezlikten",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 794958
+      },
+      "false_accept": false
+    },
+    {
+      "input": "göya",
+      "expected": "güya",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 625542
+      },
+      "false_accept": false
+    },
+    {
+      "input": "göz yaşı",
+      "expected": "gözyaşı",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1760958
+      },
+      "false_accept": false
+    },
+    {
+      "input": "hadsafhada",
+      "expected": "had safhada",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 914291
+      },
+      "false_accept": false
+    },
+    {
+      "input": "Hakkari",
+      "expected": "Hakkâri",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 2148875
+      },
+      "false_accept": false
+    },
+    {
+      "input": "halikar",
+      "expected": "hâlükâr",
+      "distance": 3,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1241250
+      },
+      "false_accept": false
+    },
+    {
+      "input": "halukar",
+      "expected": "hâlükâr",
+      "distance": 3,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 899041
+      },
+      "false_accept": false
+    },
+    {
+      "input": "hapşurmak",
+      "expected": "hapşırmak",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 985417
+      },
+      "false_accept": false
+    },
+    {
+      "input": "hapşuruk",
+      "expected": "hapşırık",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 895083
+      },
+      "false_accept": false
+    },
+    {
+      "input": "haremlik selamlık",
+      "expected": "harem selamlık",
+      "distance": 3,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1141375
+      },
+      "false_accept": false
+    },
+    {
+      "input": "harfiyat",
+      "expected": "hafriyat",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1389458
+      },
+      "false_accept": false
+    },
+    {
+      "input": "hasıraltı",
+      "expected": "hasır altı",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1046583
+      },
+      "false_accept": false
+    },
+    {
+      "input": "hastahane",
+      "expected": "hastane",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1022583
+      },
+      "false_accept": false
+    },
+    {
+      "input": "hatasıyla sevabıyla",
+      "expected": "hatasıyla savabıyla",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 984959
+      },
+      "false_accept": false
+    },
+    {
+      "input": "hatrı",
+      "expected": "hatırı",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1056875
+      },
+      "false_accept": false
+    },
+    {
+      "input": "hatrım",
+      "expected": "hatırım",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1278000
+      },
+      "false_accept": false
+    },
+    {
+      "input": "hatrımız",
+      "expected": "hatırımız",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 928458
+      },
+      "false_accept": false
+    },
+    {
+      "input": "hayli hayli",
+      "expected": "haydi haydi",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 871167
+      },
+      "false_accept": false
+    },
+    {
+      "input": "hazır cevap",
+      "expected": "hazırcevap",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1833458
+      },
+      "false_accept": false
+    },
+    {
+      "input": "hem fikir",
+      "expected": "hemfikir",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 823375
+      },
+      "false_accept": false
+    },
+    {
+      "input": "hemşeri",
+      "expected": "hemşehri",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 797917
+      },
+      "false_accept": false
+    },
+    {
+      "input": "hemşir",
+      "expected": "hemşire",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 831125
+      },
+      "false_accept": false
+    },
+    {
+      "input": "her hangi bir",
+      "expected": "herhangi bir",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 795542
+      },
+      "false_accept": false
+    },
+    {
+      "input": "herbiri",
+      "expected": "her biri",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 815917
+      },
+      "false_accept": false
+    },
+    {
+      "input": "hergün",
+      "expected": "her gün",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1032833
+      },
+      "false_accept": false
+    },
+    {
+      "input": "herhangibir",
+      "expected": "herhangi bir",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1021666
+      },
+      "false_accept": false
+    },
+    {
+      "input": "herkez",
+      "expected": "herkes",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1004333
+      },
+      "false_accept": false
+    },
+    {
+      "input": "herşey",
+      "expected": "her şey",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1082000
+      },
+      "false_accept": false
+    },
+    {
+      "input": "hiç bir",
+      "expected": "hiçbir",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 701041
+      },
+      "false_accept": false
+    },
+    {
+      "input": "hiçkimse",
+      "expected": "hiç kimse",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 721000
+      },
+      "false_accept": false
+    },
+    {
+      "input": "Hintli",
+      "expected": "Hint",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1807542
+      },
+      "false_accept": false
+    },
+    {
+      "input": "Hıristiyanlık'ta",
+      "expected": "Hristiyanlıkta",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 3915667
+      },
+      "false_accept": false
+    },
+    {
+      "input": "hoş beş",
+      "expected": "hoşbeş",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 759125
+      },
+      "false_accept": false
+    },
+    {
+      "input": "hoşçakalmak",
+      "expected": "hoşça kalmak",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 775417
+      },
+      "false_accept": false
+    },
+    {
+      "input": "hoşgelmek",
+      "expected": "hoş gelmek",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 917958
+      },
+      "false_accept": false
+    },
+    {
+      "input": "hukuğa",
+      "expected": "hukuka",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 652708
+      },
+      "false_accept": false
+    },
+    {
+      "input": "hukuğu",
+      "expected": "hukuku",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 540875
+      },
+      "false_accept": false
+    },
+    {
+      "input": "hukuğun",
+      "expected": "hukukun",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 546917
+      },
+      "false_accept": false
+    },
+    {
+      "input": "hükümet",
+      "expected": "hükûmet",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 780417
+      },
+      "false_accept": false
+    },
+    {
+      "input": "idda",
+      "expected": "iddia",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 935459
+      },
+      "false_accept": false
+    },
+    {
+      "input": "iddaa",
+      "expected": "iddia",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 913250
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ilizyon",
+      "expected": "illüzyon",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1956750
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ilkyardım",
+      "expected": "ilk yardım",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1189541
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ilkönce",
+      "expected": "ilk önce",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 881000
+      },
+      "false_accept": false
+    },
+    {
+      "input": "illa ki",
+      "expected": "illaki",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 842291
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ilustrasyon",
+      "expected": "illüstrasyon",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 820958
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ilüstrasyon",
+      "expected": "illüstrasyon",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 4842542
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ilüzyon",
+      "expected": "illüzyon",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1081209
+      },
+      "false_accept": false
+    },
+    {
+      "input": "imza sirküsü",
+      "expected": "imza sirküleri",
+      "distance": 4,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 922500
+      },
+      "false_accept": false
+    },
+    {
+      "input": "inkilap",
+      "expected": "inkılap",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 982958
+      },
+      "false_accept": false
+    },
+    {
+      "input": "insiyatif",
+      "expected": "inisiyatif",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 3328167
+      },
+      "false_accept": false
+    },
+    {
+      "input": "istepne",
+      "expected": "stepne",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 805083
+      },
+      "false_accept": false
+    },
+    {
+      "input": "itibariyle",
+      "expected": "itibarıyla",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1005375
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ırsi",
+      "expected": "irsî",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 538459
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ırsî",
+      "expected": "irsî",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1098083
+      },
+      "false_accept": false
+    },
+    {
+      "input": "jip",
+      "expected": "cip",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 502416
+      },
+      "false_accept": false
+    },
+    {
+      "input": "jop",
+      "expected": "cop",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 464542
+      },
+      "false_accept": false
+    },
+    {
+      "input": "kalemşör",
+      "expected": "kalemşor",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1115542
+      },
+      "false_accept": false
+    },
+    {
+      "input": "kapşon",
+      "expected": "kapüşon",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 893791
+      },
+      "false_accept": false
+    },
+    {
+      "input": "kara kutu",
+      "expected": "karakutu",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1318000
+      },
+      "false_accept": false
+    },
+    {
+      "input": "karayolu",
+      "expected": "kara yolu",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1427541
+      },
+      "false_accept": false
+    },
+    {
+      "input": "kareografi",
+      "expected": "koreografi",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1351334
+      },
+      "false_accept": false
+    },
+    {
+      "input": "karisör",
+      "expected": "karoser",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1526167
+      },
+      "false_accept": false
+    },
+    {
+      "input": "karma karışık",
+      "expected": "karmakarışık",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1412167
+      },
+      "false_accept": false
+    },
+    {
+      "input": "karnıbahar",
+      "expected": "karnabahar",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1204875
+      },
+      "false_accept": false
+    },
+    {
+      "input": "karsör",
+      "expected": "karoser",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1082125
+      },
+      "false_accept": false
+    },
+    {
+      "input": "kat etmek",
+      "expected": "katetmek",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 984042
+      },
+      "false_accept": false
+    },
+    {
+      "input": "kat sayı",
+      "expected": "katsayı",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1050750
+      },
+      "false_accept": false
+    },
+    {
+      "input": "kat ve kat",
+      "expected": "katbekat",
+      "distance": 3,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 2642458
+      },
+      "false_accept": false
+    },
+    {
+      "input": "kayyum",
+      "expected": "kayyım",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1343709
+      },
+      "false_accept": false
+    },
+    {
+      "input": "kiprik",
+      "expected": "kirpik",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 880709
+      },
+      "false_accept": false
+    },
+    {
+      "input": "kitapevi",
+      "expected": "kitabevi",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 776166
+      },
+      "false_accept": false
+    },
+    {
+      "input": "kıravat",
+      "expected": "kravat",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1085750
+      },
+      "false_accept": false
+    },
+    {
+      "input": "kırk ikindi",
+      "expected": "kırkikindi",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 889084
+      },
+      "false_accept": false
+    },
+    {
+      "input": "klavuz",
+      "expected": "kılavuz",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 991750
+      },
+      "false_accept": false
+    },
+    {
+      "input": "kollektif",
+      "expected": "kolektif",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1304917
+      },
+      "false_accept": false
+    },
+    {
+      "input": "kolonyağı",
+      "expected": "kolonya",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1472625
+      },
+      "false_accept": false
+    },
+    {
+      "input": "komidin",
+      "expected": "komodin",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 925250
+      },
+      "false_accept": false
+    },
+    {
+      "input": "konservatuar",
+      "expected": "konservatuvar",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 941458
+      },
+      "false_accept": false
+    },
+    {
+      "input": "konteynır",
+      "expected": "konteyner",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1000916
+      },
+      "false_accept": false
+    },
+    {
+      "input": "kontraplak",
+      "expected": "kontrplak",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 4532958
+      },
+      "false_accept": false
+    },
+    {
+      "input": "kontür",
+      "expected": "kontör",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1085250
+      },
+      "false_accept": false
+    },
+    {
+      "input": "küfür etmek",
+      "expected": "küfretmek",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 809625
+      },
+      "false_accept": false
+    },
+    {
+      "input": "küme çıkmak",
+      "expected": "kümeye çıkmak",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1931625
+      },
+      "false_accept": false
+    },
+    {
+      "input": "küpür",
+      "expected": "kupür",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 767584
+      },
+      "false_accept": false
+    },
+    {
+      "input": "küsür",
+      "expected": "küsur",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 839250
+      },
+      "false_accept": false
+    },
+    {
+      "input": "küvöz",
+      "expected": "kuvöz",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 853042
+      },
+      "false_accept": false
+    },
+    {
+      "input": "labaratuar",
+      "expected": "laboratuvar",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1062625
+      },
+      "false_accept": false
+    },
+    {
+      "input": "laboratuar",
+      "expected": "laboratuvar",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 942792
+      },
+      "false_accept": false
+    },
+    {
+      "input": "lağabo",
+      "expected": "lavabo",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1029333
+      },
+      "false_accept": false
+    },
+    {
+      "input": "lakayt",
+      "expected": "lakayıt",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1029583
+      },
+      "false_accept": false
+    },
+    {
+      "input": "lavobo",
+      "expected": "lavabo",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 896583
+      },
+      "false_accept": false
+    },
+    {
+      "input": "laylon",
+      "expected": "naylon",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 965000
+      },
+      "false_accept": false
+    },
+    {
+      "input": "logar",
+      "expected": "rögar",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 713167
+      },
+      "false_accept": false
+    },
+    {
+      "input": "madem ki",
+      "expected": "mademki",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1282583
+      },
+      "false_accept": false
+    },
+    {
+      "input": "mahçup",
+      "expected": "mahcup",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 2200042
+      },
+      "false_accept": false
+    },
+    {
+      "input": "malesef",
+      "expected": "maalesef",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1908875
+      },
+      "false_accept": false
+    },
+    {
+      "input": "malumun ila'''n'''ı",
+      "expected": "malumun ilamı",
+      "distance": 7,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1045667
+      },
+      "false_accept": false
+    },
+    {
+      "input": "marijuana",
+      "expected": "marihuana",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1379750
+      },
+      "false_accept": false
+    },
+    {
+      "input": "maskulen",
+      "expected": "maskülen",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1265083
+      },
+      "false_accept": false
+    },
+    {
+      "input": "maydonoz",
+      "expected": "maydanoz",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1068250
+      },
+      "false_accept": false
+    },
+    {
+      "input": "medcezir",
+      "expected": "metcezir",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 880750
+      },
+      "false_accept": false
+    },
+    {
+      "input": "mefta",
+      "expected": "mevta",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1252375
+      },
+      "false_accept": false
+    },
+    {
+      "input": "melemen",
+      "expected": "menemen",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1003375
+      },
+      "false_accept": false
+    },
+    {
+      "input": "men etmek",
+      "expected": "menetmek",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1020333
+      },
+      "false_accept": false
+    },
+    {
+      "input": "menacer",
+      "expected": "menajer",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1094333
+      },
+      "false_accept": false
+    },
+    {
+      "input": "menapoz",
+      "expected": "menopoz",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1269250
+      },
+      "false_accept": false
+    },
+    {
+      "input": "menejer",
+      "expected": "menajer",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1322875
+      },
+      "false_accept": false
+    },
+    {
+      "input": "mentalite",
+      "expected": "mantalite",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1035334
+      },
+      "false_accept": false
+    },
+    {
+      "input": "mentor",
+      "expected": "mentör",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1063959
+      },
+      "false_accept": false
+    },
+    {
+      "input": "mescid",
+      "expected": "mescit",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1105792
+      },
+      "false_accept": false
+    },
+    {
+      "input": "metod",
+      "expected": "metot",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1063750
+      },
+      "false_accept": false
+    },
+    {
+      "input": "metoroloji",
+      "expected": "meteoroloji",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 3092917
+      },
+      "false_accept": false
+    },
+    {
+      "input": "meyva",
+      "expected": "meyve",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 2107292
+      },
+      "false_accept": false
+    },
+    {
+      "input": "mini mini",
+      "expected": "minimini",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1289459
+      },
+      "false_accept": false
+    },
+    {
+      "input": "molotof kokteyli",
+      "expected": "molotofkokteyli",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1134083
+      },
+      "false_accept": false
+    },
+    {
+      "input": "morel",
+      "expected": "moral",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1245417
+      },
+      "false_accept": false
+    },
+    {
+      "input": "muhattap",
+      "expected": "muhatap",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1018666
+      },
+      "false_accept": false
+    },
+    {
+      "input": "mustahak",
+      "expected": "müstahak",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1112083
+      },
+      "false_accept": false
+    },
+    {
+      "input": "mükemmelliyetçi",
+      "expected": "mükemmeliyetçi",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1513166
+      },
+      "false_accept": false
+    },
+    {
+      "input": "müsade",
+      "expected": "müsaade",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 880166
+      },
+      "false_accept": false
+    },
+    {
+      "input": "müsil",
+      "expected": "müshil",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 780084
+      },
+      "false_accept": false
+    },
+    {
+      "input": "müstehak",
+      "expected": "müstahak",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 910208
+      },
+      "false_accept": false
+    },
+    {
+      "input": "nacizane",
+      "expected": "naçizane",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 902375
+      },
+      "false_accept": false
+    },
+    {
+      "input": "nalet",
+      "expected": "lanet",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 982000
+      },
+      "false_accept": false
+    },
+    {
+      "input": "natural",
+      "expected": "natürel",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 988833
+      },
+      "false_accept": false
+    },
+    {
+      "input": "naturel",
+      "expected": "natürel",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 929916
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ne idüğü belirsiz",
+      "expected": "ne idiği belirsiz",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 3283875
+      },
+      "false_accept": false
+    },
+    {
+      "input": "netekim",
+      "expected": "nitekim",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 940708
+      },
+      "false_accept": false
+    },
+    {
+      "input": "neyseki",
+      "expected": "neyse ki",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 937625
+      },
+      "false_accept": false
+    },
+    {
+      "input": "nufus",
+      "expected": "nüfus",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 992292
+      },
+      "false_accept": false
+    },
+    {
+      "input": "nüfüs",
+      "expected": "nüfus",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 653750
+      },
+      "false_accept": false
+    },
+    {
+      "input": "nümizmatik",
+      "expected": "nümismatik",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 622542
+      },
+      "false_accept": false
+    },
+    {
+      "input": "oldu bitti",
+      "expected": "oldubitti",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 755458
+      },
+      "false_accept": false
+    },
+    {
+      "input": "onla",
+      "expected": "onunla",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 768084
+      },
+      "false_accept": false
+    },
+    {
+      "input": "orda",
+      "expected": "orada",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 961459
+      },
+      "false_accept": false
+    },
+    {
+      "input": "orjinal",
+      "expected": "orijinal",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1079000
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ortaya konmak",
+      "expected": "ortaya koymak",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 989459
+      },
+      "false_accept": false
+    },
+    {
+      "input": "oysa ki",
+      "expected": "oysaki",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 609250
+      },
+      "false_accept": false
+    },
+    {
+      "input": "panaroma",
+      "expected": "panorama",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1065250
+      },
+      "false_accept": false
+    },
+    {
+      "input": "panik atak",
+      "expected": "panikatak",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 998500
+      },
+      "false_accept": false
+    },
+    {
+      "input": "parakende",
+      "expected": "perakende",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1181458
+      },
+      "false_accept": false
+    },
+    {
+      "input": "pardesü",
+      "expected": "pardösü",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1163916
+      },
+      "false_accept": false
+    },
+    {
+      "input": "parende",
+      "expected": "perende",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1025791
+      },
+      "false_accept": false
+    },
+    {
+      "input": "parentez",
+      "expected": "parantez",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1149083
+      },
+      "false_accept": false
+    },
+    {
+      "input": "pasifize",
+      "expected": "pasivize",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1056583
+      },
+      "false_accept": false
+    },
+    {
+      "input": "pekçok",
+      "expected": "pek çok",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 819292
+      },
+      "false_accept": false
+    },
+    {
+      "input": "peluş",
+      "expected": "pelüş",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 791875
+      },
+      "false_accept": false
+    },
+    {
+      "input": "peşisıra",
+      "expected": "peşi sıra",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 878458
+      },
+      "false_accept": false
+    },
+    {
+      "input": "peştemal",
+      "expected": "peştamal",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 880958
+      },
+      "false_accept": false
+    },
+    {
+      "input": "piercing",
+      "expected": "pirsing",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 2569083
+      },
+      "false_accept": false
+    },
+    {
+      "input": "pili",
+      "expected": "pile",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1107125
+      },
+      "false_accept": false
+    },
+    {
+      "input": "pinpirik",
+      "expected": "pimpirik",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 892500
+      },
+      "false_accept": false
+    },
+    {
+      "input": "pisküvit",
+      "expected": "bisküvi",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 953458
+      },
+      "false_accept": false
+    },
+    {
+      "input": "pisküüt",
+      "expected": "bisküvi",
+      "distance": 3,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 802667
+      },
+      "false_accept": false
+    },
+    {
+      "input": "pli",
+      "expected": "pile",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 566792
+      },
+      "false_accept": false
+    },
+    {
+      "input": "poaça",
+      "expected": "poğaça",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 3131708
+      },
+      "false_accept": false
+    },
+    {
+      "input": "poça",
+      "expected": "poğaça",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 783416
+      },
+      "false_accept": false
+    },
+    {
+      "input": "poğça",
+      "expected": "poğaça",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 739792
+      },
+      "false_accept": false
+    },
+    {
+      "input": "polikinlik",
+      "expected": "poliklinik",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1605167
+      },
+      "false_accept": false
+    },
+    {
+      "input": "portalı",
+      "expected": "portali",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1166583
+      },
+      "false_accept": false
+    },
+    {
+      "input": "pound",
+      "expected": "paunt",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1037667
+      },
+      "false_accept": false
+    },
+    {
+      "input": "prezentabl",
+      "expected": "prezantabl",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 921917
+      },
+      "false_accept": false
+    },
+    {
+      "input": "profüterol",
+      "expected": "profiterol",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 738583
+      },
+      "false_accept": false
+    },
+    {
+      "input": "proleterya",
+      "expected": "proletarya",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1065875
+      },
+      "false_accept": false
+    },
+    {
+      "input": "psikiyatrist",
+      "expected": "psikiyatr",
+      "distance": 3,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 754458
+      },
+      "false_accept": false
+    },
+    {
+      "input": "psikolojist",
+      "expected": "psikolog",
+      "distance": 4,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 693375
+      },
+      "false_accept": false
+    },
+    {
+      "input": "püskevit",
+      "expected": "bisküvi",
+      "distance": 4,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 603500
+      },
+      "false_accept": false
+    },
+    {
+      "input": "püsküvüt",
+      "expected": "bisküvi",
+      "distance": 4,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 774625
+      },
+      "false_accept": false
+    },
+    {
+      "input": "püsküüt",
+      "expected": "bisküvi",
+      "distance": 4,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 678583
+      },
+      "false_accept": false
+    },
+    {
+      "input": "raslantı",
+      "expected": "rastlantı",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1233334
+      },
+      "false_accept": false
+    },
+    {
+      "input": "reçber",
+      "expected": "rençper",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1056458
+      },
+      "false_accept": false
+    },
+    {
+      "input": "rençber",
+      "expected": "rençper",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1143250
+      },
+      "false_accept": false
+    },
+    {
+      "input": "repertuar",
+      "expected": "repertuvar",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1092917
+      },
+      "false_accept": false
+    },
+    {
+      "input": "resmi geçit",
+      "expected": "resmigeçit",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1015583
+      },
+      "false_accept": false
+    },
+    {
+      "input": "resmî geçit",
+      "expected": "resmigeçit",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 899458
+      },
+      "false_accept": false
+    },
+    {
+      "input": "restorant",
+      "expected": "restoran",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1049458
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ritm",
+      "expected": "ritim",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 761459
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ropteşambır",
+      "expected": "ropdöşambır",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 668958
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ruşeym",
+      "expected": "rüşeym",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 725958
+      },
+      "false_accept": false
+    },
+    {
+      "input": "rütuş",
+      "expected": "rötuş",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 633208
+      },
+      "false_accept": false
+    },
+    {
+      "input": "röpteşambır",
+      "expected": "ropdöşambır",
+      "distance": 3,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 551209
+      },
+      "false_accept": false
+    },
+    {
+      "input": "saçmasapan",
+      "expected": "saçma sapan",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 930333
+      },
+      "false_accept": false
+    },
+    {
+      "input": "sağsalim",
+      "expected": "sağ salim",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1006458
+      },
+      "false_accept": false
+    },
+    {
+      "input": "san ki",
+      "expected": "sanki",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1226875
+      },
+      "false_accept": false
+    },
+    {
+      "input": "sanane",
+      "expected": "sana ne",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1220875
+      },
+      "false_accept": false
+    },
+    {
+      "input": "sandöviç",
+      "expected": "sandviç",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1320250
+      },
+      "false_accept": false
+    },
+    {
+      "input": "sarmısak",
+      "expected": "sarımsak",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1312000
+      },
+      "false_accept": false
+    },
+    {
+      "input": "şartel",
+      "expected": "şalter",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1184833
+      },
+      "false_accept": false
+    },
+    {
+      "input": "şarz",
+      "expected": "şarj",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 8626709
+      },
+      "false_accept": false
+    },
+    {
+      "input": "senle",
+      "expected": "seninle",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1301166
+      },
+      "false_accept": false
+    },
+    {
+      "input": "seramoni",
+      "expected": "seremoni",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1502208
+      },
+      "false_accept": false
+    },
+    {
+      "input": "serbes",
+      "expected": "serbest",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1208500
+      },
+      "false_accept": false
+    },
+    {
+      "input": "sezaryan",
+      "expected": "sezaryen",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 900083
+      },
+      "false_accept": false
+    },
+    {
+      "input": "sezeryan",
+      "expected": "sezaryen",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 876042
+      },
+      "false_accept": false
+    },
+    {
+      "input": "silahşör",
+      "expected": "silahşor",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1260208
+      },
+      "false_accept": false
+    },
+    {
+      "input": "sıyga",
+      "expected": "siga",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 876917
+      },
+      "false_accept": false
+    },
+    {
+      "input": "soğuk kanlı",
+      "expected": "soğukkanlı",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 796458
+      },
+      "false_accept": false
+    },
+    {
+      "input": "sosyolojist",
+      "expected": "sosyolog",
+      "distance": 4,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 909750
+      },
+      "false_accept": false
+    },
+    {
+      "input": "stoğu",
+      "expected": "stoku",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 928542
+      },
+      "false_accept": false
+    },
+    {
+      "input": "şuan",
+      "expected": "şu an",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 797208
+      },
+      "false_accept": false
+    },
+    {
+      "input": "subap",
+      "expected": "supap",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 936916
+      },
+      "false_accept": false
+    },
+    {
+      "input": "suç üstü",
+      "expected": "suçüstü",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 817125
+      },
+      "false_accept": false
+    },
+    {
+      "input": "sükutuhayal",
+      "expected": "sukutuhayal",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 746375
+      },
+      "false_accept": false
+    },
+    {
+      "input": "süpriz",
+      "expected": "sürpriz",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 800000
+      },
+      "false_accept": false
+    },
+    {
+      "input": "şöför",
+      "expected": "şoför",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 503833
+      },
+      "false_accept": false
+    },
+    {
+      "input": "sözgelimi",
+      "expected": "söz gelimi",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 754625
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tabiki",
+      "expected": "tabii ki",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 5184750
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tabikide",
+      "expected": "tabii ki",
+      "distance": 4,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1373083
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tabldot",
+      "expected": "tabildot",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1182125
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tahtarevalli",
+      "expected": "tahterevalli",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 946833
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tahterevan",
+      "expected": "tahtırevan",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1030000
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tastik",
+      "expected": "tasdik",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1359542
+      },
+      "false_accept": false
+    },
+    {
+      "input": "TBMM'ne",
+      "expected": "TBMM'ye",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1181709
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tekrardan",
+      "expected": "tekrar",
+      "distance": 3,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1210542
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tenefüs",
+      "expected": "teneffüs",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1320625
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tepe taklak",
+      "expected": "tepetaklak",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1574916
+      },
+      "false_accept": false
+    },
+    {
+      "input": "terketmek",
+      "expected": "terk etmek",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1100000
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tesbih",
+      "expected": "tespih",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1264500
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tesbit",
+      "expected": "tespit",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1180458
+      },
+      "false_accept": false
+    },
+    {
+      "input": "testesteron",
+      "expected": "testosteron",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1265667
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tetanoz",
+      "expected": "tetanos",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1428250
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tiroid",
+      "expected": "tiroit",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1047250
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tıpa",
+      "expected": "tıbba",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 627208
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tıpı",
+      "expected": "tıbbı",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 753250
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tıpın",
+      "expected": "tıbbın",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 715583
+      },
+      "false_accept": false
+    },
+    {
+      "input": "toz pembe",
+      "expected": "tozpembe",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 692417
+      },
+      "false_accept": false
+    },
+    {
+      "input": "trabzan",
+      "expected": "tırabzan",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 911208
+      },
+      "false_accept": false
+    },
+    {
+      "input": "tranvay",
+      "expected": "tramvay",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 937541
+      },
+      "false_accept": false
+    },
+    {
+      "input": "traş",
+      "expected": "tıraş",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 830750
+      },
+      "false_accept": false
+    },
+    {
+      "input": "turap",
+      "expected": "türap",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 958750
+      },
+      "false_accept": false
+    },
+    {
+      "input": "Türkçe'miz",
+      "expected": "Türkçemiz",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1878292
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ultimatom",
+      "expected": "ültimatom",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 874417
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ultrasyon",
+      "expected": "ultrason",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 805916
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ultümatom",
+      "expected": "ültimatom",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 822708
+      },
+      "false_accept": false
+    },
+    {
+      "input": "uluslar arası",
+      "expected": "uluslararası",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1045500
+      },
+      "false_accept": false
+    },
+    {
+      "input": "umrumda",
+      "expected": "umurumda",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 875792
+      },
+      "false_accept": false
+    },
+    {
+      "input": "unvan",
+      "expected": "ünvan",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 595791
+      },
+      "false_accept": false
+    },
+    {
+      "input": "uslup",
+      "expected": "üslup",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 619292
+      },
+      "false_accept": false
+    },
+    {
+      "input": "usül",
+      "expected": "usul",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 813791
+      },
+      "false_accept": false
+    },
+    {
+      "input": "vad etmek",
+      "expected": "vadetmek",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 950541
+      },
+      "false_accept": false
+    },
+    {
+      "input": "vandal",
+      "expected": "Vandal",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1298709
+      },
+      "false_accept": false
+    },
+    {
+      "input": "vaz geçmek",
+      "expected": "vazgeçmek",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 805792
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ve ya",
+      "expected": "veya",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 753542
+      },
+      "false_accept": false
+    },
+    {
+      "input": "vehamet",
+      "expected": "vahamet",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 902208
+      },
+      "false_accept": false
+    },
+    {
+      "input": "vejeteryan",
+      "expected": "vejetaryen",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 687167
+      },
+      "false_accept": false
+    },
+    {
+      "input": "Venezüella",
+      "expected": "Venezuela",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1746000
+      },
+      "false_accept": false
+    },
+    {
+      "input": "vol'''e'''yi vurmak",
+      "expected": "voliyi vurmak",
+      "distance": 7,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 705166
+      },
+      "false_accept": false
+    },
+    {
+      "input": "vucüt",
+      "expected": "vücut",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 558167
+      },
+      "false_accept": false
+    },
+    {
+      "input": "vaad etmek",
+      "expected": "vadetmek",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 904833
+      },
+      "false_accept": false
+    },
+    {
+      "input": "vaat etmek",
+      "expected": "vadetmek",
+      "distance": 3,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 928875
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ya herru ya merru",
+      "expected": "ya herrü ya merrü",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 839375
+      },
+      "false_accept": false
+    },
+    {
+      "input": "yada",
+      "expected": "ya da",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 911458
+      },
+      "false_accept": false
+    },
+    {
+      "input": "yakan top",
+      "expected": "yakantop",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1038416
+      },
+      "false_accept": false
+    },
+    {
+      "input": "yakınen",
+      "expected": "yakından",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1057375
+      },
+      "false_accept": false
+    },
+    {
+      "input": "yalnış",
+      "expected": "yanlış",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1063708
+      },
+      "false_accept": false
+    },
+    {
+      "input": "yanar dağ",
+      "expected": "yanardağ",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1189625
+      },
+      "false_accept": false
+    },
+    {
+      "input": "yanısıra",
+      "expected": "yanı sıra",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1119750
+      },
+      "false_accept": false
+    },
+    {
+      "input": "yanlız",
+      "expected": "yalnız",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1078000
+      },
+      "false_accept": false
+    },
+    {
+      "input": "yanyana",
+      "expected": "yan yana",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1029083
+      },
+      "false_accept": false
+    },
+    {
+      "input": "Yaratan",
+      "expected": "Yaradan",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 2420375
+      },
+      "false_accept": false
+    },
+    {
+      "input": "yayınlamak",
+      "expected": "yayımlamak",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 1926125
+      },
+      "false_accept": false
+    },
+    {
+      "input": "Yeni Zellanda",
+      "expected": "Yeni Zelanda",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 2016750
+      },
+      "false_accept": false
+    },
+    {
+      "input": "yinede",
+      "expected": "yine de",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 963167
+      },
+      "false_accept": false
+    },
+    {
+      "input": "yıl başı",
+      "expected": "yılbaşı",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 713459
+      },
+      "false_accept": false
+    },
+    {
+      "input": "üslub",
+      "expected": "üslup",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 861666
+      },
+      "false_accept": false
+    },
+    {
+      "input": "üstteğmen",
+      "expected": "üsteğmen",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 760583
+      },
+      "false_accept": false
+    },
+    {
+      "input": "üstün körü",
+      "expected": "üstünkörü",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 651667
+      },
+      "false_accept": false
+    },
+    {
+      "input": "üzre",
+      "expected": "üzere",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 654875
+      },
+      "false_accept": false
+    },
+    {
+      "input": "zebellah",
+      "expected": "zebella",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 979166
+      },
+      "false_accept": false
+    },
+    {
+      "input": "zehir etmek",
+      "expected": "zehretmek",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 822125
+      },
+      "false_accept": false
+    },
+    {
+      "input": "zerafet",
+      "expected": "zarafet",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 881958
+      },
+      "false_accept": false
+    },
+    {
+      "input": "zeytin yağı",
+      "expected": "zeytinyağı",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 854292
+      },
+      "false_accept": false
+    },
+    {
+      "input": "zıttı",
+      "expected": "zıddı",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 589625
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ön görü",
+      "expected": "öngörü",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 596125
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ön sezi",
+      "expected": "önsezi",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 489584
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ötenazi",
+      "expected": "ötanazi",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 642000
+      },
+      "false_accept": false
+    },
+    {
+      "input": "öz ve öz",
+      "expected": "özbeöz",
+      "distance": 3,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 554292
+      },
+      "false_accept": false
+    },
+    {
+      "input": "özgeçmiş",
+      "expected": "öz geçmiş",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 715833
+      },
+      "false_accept": false
+    }
+  ],
+  "start_timestamp": {
+    "secs": 1787815360,
+    "subsec_nanos": 858155000
+  },
+  "total_time": {
+    "secs": 0,
+    "subsec_nanos": 29471542
+  }
+}
