@@ -1,24 +1,57 @@
 # Marks a closed list of TRmorph lemmas as +Err/Orth (GiellaLT's tag for
-# "recognized, but non-standard/orthographically questionable form").
+# "recognized, but non-standard/orthographically questionable form"), so
+# they get routed out of the speller by the standard GiellaLT
+# remove-usage-tags / remove-orthography-tags machinery, the same as any
+# other +Err/Orth analysis.
 #
-# The subtree (ext-TRmorph/lexicon/*) marks these lemmas as non-standard or
-# colloquial only in "!"-comments, e.g.:
-#   trampolin             N;    ! non-standard/alternative
-# Comments carry no weight in the compiled analyser, so without this filter
-# such words analyse identically to fully standard vocabulary. Since we
-# don't modify subtree source, we mark them here instead, post-composition,
-# by matching on the lemma+POS the analyser actually produces.
+# IMPORTANT: +Err/Orth is inserted as one atomic symbol (double-quoted
+# "+Err/Orth"), not as a literal string (braced {+Err/Orth}, which would
+# insert it as a sequence of 9 single-character symbols: +,E,r,r,/,O,r,t,h).
+# The standard GiellaLT tag-stripping filters match +Err/Orth as a single
+# symbol, matching how it's declared as one Multichar_Symbol in a normal
+# language's root.lexc -- a decomposed sequence would silently fail to
+# match, and such words would wrongly survive all the way into the
+# speller. Braces are still fine (and used below) for the *context*
+# patterns being matched against, since TRmorph's own analyses -- lemma,
+# +N, +Adj etc. -- are themselves decomposed character sequences (TRmorph
+# never declared them as multichar symbols; see SEPARATOR_PLUS/
+# MARK_SUBCATEGORIES in ../morphology/Makefile.am), so a decomposed context
+# is what's actually present in the string being matched.
 #
-# To refresh this list after an ext-TRmorph update:
-#   cd ext-TRmorph && grep -nE '!\s*(non-?std|non-?standard|colloq|substandard)' lexicon/*
-# then, for each citation form found, verify the exact analysed lemma+POS
-# with (rebuild trmorph.fst first if needed):
-#   echo WORD | /usr/local/bin/flookup ext-TRmorph/trmorph.fst
-# and add the resulting "lemma+POS" (or "lemma+POS+prop" etc.) string below.
-# Note some source entries embed morphophonemic markers not meant to be
-# typed (e.g. "pütürü^k" -> citation form "pütürük"); test the plain form.
+# Two sources feed the closed list below:
+#
+# 1) The subtree (ext-TRmorph/lexicon/*) marks some entries as non-standard
+#    or colloquial only in "!"-comments, e.g.:
+#      trampolin             N;    ! non-standard/alternative
+#    Comments carry no weight in the compiled analyser, so without this
+#    filter such words analyse identically to fully standard vocabulary.
+#    To refresh this part after an ext-TRmorph update:
+#      cd ext-TRmorph && grep -nE '!\s*(non-?std|non-?standard|colloq|substandard)' lexicon/*
+#    then, for each citation form found, verify the exact analysed
+#    lemma+POS with (rebuild trmorph.fst first if needed):
+#      echo WORD | /usr/local/bin/flookup ext-TRmorph/trmorph.fst
+#    and add the resulting "lemma+POS" (or "lemma+POS+prop" etc.) string.
+#    Note some source entries embed morphophonemic markers not meant to be
+#    typed (e.g. "pütürü^k" -> citation form "pütürük"); test the plain
+#    form.
+#
+# 2) tools/spellcheckers/test/typos.tsv (a development-only resource, not
+#    an evaluation set -- see its own header) turned up real words that
+#    Wikipedia's "common Turkish misspellings" list flags, but that
+#    TRmorph's lexicon accepts outright as ordinary vocabulary with no
+#    non-standard marking at all (neither a comment above nor a +typo
+#    continuation), so they were reaching the speller unmarked. Each
+#    candidate was checked with flookup, and only entries whose shortest
+#    analysis is a bare "lemma+POS" (nothing derived/inflected on top --
+#    e.g. NOT "Ankara+N+prop+li+Adj", a perfectly ordinary "-lı" denonym
+#    derivation that just happens to render as a typos.tsv entry for an
+#    unrelated, apostrophe-placement reason) were added here. Refresh by
+#    diffing tools/spellcheckers/test/typos.tsv's error-word column
+#    against `divvunspell suggest -a tr.zhfst -n1 WORD`'s [CORRECT]/
+#    [INCORRECT] verdict, then flookup + eyeball each newly-[CORRECT] one
+#    the same way.
 
-[..] -> {+Err/Orth} || [
+[..] -> "+Err/Orth" || [
     {trampolin+N} | {pütürük+N} | {kokoş+N} | {omo+N} | {akord+N} |
     {cihad+N} | {elektromagnetizma+N} | {mescid+N} | {tirad+N} |
     {fondip+N} | {etüd+N} | {garni+N} | {papiş+N} | {peluş+N} |
@@ -26,5 +59,40 @@
     {Mersedes+N+prop} |
     {bumbuz+Adj} | {direkman+Adj} | {kıytırık+Adj} | {tontoş+Adj} |
     {otomatikman+Adv} | {ailecek+Adv} | {iyicene+Adv} | {küttedek+Adv} |
-    {pattadak+Adv}
-] _ ;
+    {pattadak+Adv} |
+    {Antartika+N+prop} | {Azerbeycan+N+prop} | {Doğubeyazıt+N+prop} | {Hakkari+N+prop} |
+    {Hintli+N+prop} | {Venezüella+N+prop} | {abi+N} | {acenta+N} |
+    {afaroz+N} | {aferim+Ij} | {ahçı+N} | {akibet+N} |
+    {anfi+N} | {arasıra+Adv} | {ardarda+Adv} | {arefe+N} |
+    {ayrıyeten+Adv} | {bumbar+N} | {ceryan+N} | {dersane+N} |
+    {doğalgaz+N} | {döküman+N} | {entellektüel+Adj} | {espiri+N} |
+    {euro+N} | {evye+N} | {eşek+N} | {garez+N} |
+    {gay+Adj} | {hastahane+N} | {hemşeri+Adj} | {hergün+Adv} |
+    {hükümet+N} | {ilkyardım+N} | {ilkönce+Adv} | {jip+N} |
+    {karayolu+N} | {kayyum+N} | {kollektif+Adj} | {laboratuar+N} |
+    {mahçup+Adj} | {medcezir+N} | {mentor+N} | {metod+N} |
+    {meyva+N} | {orjinal+Adj} | {pekçok+Adj} | {pili+N} |
+    {psikiyatrist+N} | {raslantı+N} | {rençber+N} | {repertuar+N} |
+    {ritm+N} | {sandöviç+N} | {sarmısak+N} | {saçmasapan+Adj} |
+    {silahşör+N} | {sözgelimi+Adv} | {sıyga+N} | {tesbih+N} |
+    {tesbit+N} | {tiroid+N} | {traş+N} | {tıpa+N} |
+    {unvan+N} | {usül+N} | {vandal+N} | {yanyana+Adj} |
+    {yanısıra+Adv} | {zerafet+N} | {özgeçmiş+N} | {şöför+N}
+] _
+
+# TRmorph's own MARK_TYPOS mechanism (options.h, on by default) already
+# tags a separate, curated set of exceptions.lexc entries with a native
+# "+typo" tag (e.g. "konservatuvar+N+typo"), but +typo isn't a GiellaLT
+# tag, and there's no reason to keep two different "this isn't standard"
+# tags side by side in the infrastructure. Replace it outright with
+# +Err/Orth instead of just appending to it, composed (.o.) onto the
+# insertion rule above rather than written as its own separate top-level
+# statement: hfst-regexp2fst -S only keeps one of several
+# semicolon-separated top-level statements in a file (a second rule
+# written as its own separate "[..] -> ... ;" silently disappears,
+# exactly the trap already documented in the tag-conversion filter
+# earlier in this build), so composing both steps into one statement is
+# what actually applies both.
+.o.
+{+typo} -> "+Err/Orth"
+;
