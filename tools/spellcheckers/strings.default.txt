@@ -2,3 +2,92 @@
 # a separate file), followed by TAB and the weight for the edit operation:
 #øø:öö	0.2
 #ää:ææ	0.2
+
+# The entries below are derived from tools/spellcheckers/test/typos.tsv (422
+# real Turkish typo/correction pairs, see that file for its own source/
+# licensing note): each single-word pair was aligned with plain Levenshtein
+# alignment to get its underlying character substitution/insertion/deletion,
+# and edits seen 2+ times were kept here, weighted so more frequent edits
+# are cheaper (and thus preferred as corrections) than the DEFAULT_WEIGHT=10
+# generic single-character edit set by Makefile.mod-desktop-hfst.am. Only
+# genuinely frequent patterns are included, to avoid overfitting a handful
+# of one-off typos into edits that would misfire on unrelated words.
+#
+# To refresh this list after typos.tsv changes, realign it (Levenshtein,
+# single-word entries only) and recompute frequencies; entries below keep
+# their observed count in a comment for that purpose.
+
+e:a	2	# sub e->a, seen 23x in typos.tsv
+u:ü	2	# sub u->ü, seen 17x in typos.tsv
+a:e	2	# sub a->e, seen 16x in typos.tsv
+ü:u	3	# sub ü->u, seen 12x in typos.tsv
+:i	3	# ins i, seen 12x in typos.tsv
+i:	3	# del i, seen 10x in typos.tsv
+:ı	3	# ins ı, seen 10x in typos.tsv
+ğ:k	3	# sub ğ->k, seen 9x in typos.tsv
+p:b	3	# sub p->b, seen 9x in typos.tsv
+l:	3	# del l, seen 9x in typos.tsv
+a:o	4	# sub a->o, seen 8x in typos.tsv
+s:z	4	# sub s->z, seen 8x in typos.tsv
+i:ı	4	# sub i->ı, seen 7x in typos.tsv
+ü:i	4	# sub ü->i, seen 7x in typos.tsv
+t:	4	# del t, seen 7x in typos.tsv
+:a	4	# ins a, seen 7x in typos.tsv
+i:ü	4	# sub i->ü, seen 6x in typos.tsv
+o:a	4	# sub o->a, seen 6x in typos.tsv
+b:p	4	# sub b->p, seen 6x in typos.tsv
+t:d	4	# sub t->d, seen 6x in typos.tsv
+e:	4	# del e, seen 6x in typos.tsv
+s:	4	# del s, seen 6x in typos.tsv
+:l	4	# ins l, seen 6x in typos.tsv
+ö:o	5	# sub ö->o, seen 5x in typos.tsv
+z:s	5	# sub z->s, seen 5x in typos.tsv
+a:â	5	# sub a->â, seen 5x in typos.tsv
+l:n	5	# sub l->n, seen 5x in typos.tsv
+d:t	5	# sub d->t, seen 5x in typos.tsv
+:ğ	5	# ins ğ, seen 5x in typos.tsv
+:e	5	# ins e, seen 5x in typos.tsv
+n:m	5	# sub n->m, seen 4x in typos.tsv
+n:l	5	# sub n->l, seen 4x in typos.tsv
+l:r	5	# sub l->r, seen 4x in typos.tsv
+t:i	5	# sub t->i, seen 4x in typos.tsv
+ı:i	5	# sub ı->i, seen 4x in typos.tsv
+u:ı	5	# sub u->ı, seen 4x in typos.tsv
+m:	5	# del m, seen 4x in typos.tsv
+ı:	5	# del ı, seen 4x in typos.tsv
+:n	5	# ins n, seen 4x in typos.tsv
+:v	5	# ins v, seen 4x in typos.tsv
+a:i	6	# sub a->i, seen 3x in typos.tsv
+t:g	6	# sub t->g, seen 3x in typos.tsv
+ü:v	6	# sub ü->v, seen 3x in typos.tsv
+o:ö	6	# sub o->ö, seen 3x in typos.tsv
+k:g	6	# sub k->g, seen 3x in typos.tsv
+e:ö	6	# sub e->ö, seen 3x in typos.tsv
+':	6	# del ', seen 3x in typos.tsv
+j:	6	# del j, seen 3x in typos.tsv
+a:	6	# del a, seen 3x in typos.tsv
+:h	6	# ins h, seen 3x in typos.tsv
+:t	6	# ins t, seen 3x in typos.tsv
+:b	6	# ins b, seen 3x in typos.tsv
+c:j	6	# sub c->j, seen 2x in typos.tsv
+i:r	6	# sub i->r, seen 2x in typos.tsv
+e:i	6	# sub e->i, seen 2x in typos.tsv
+c:ç	6	# sub c->ç, seen 2x in typos.tsv
+e:ı	6	# sub e->ı, seen 2x in typos.tsv
+r:l	6	# sub r->l, seen 2x in typos.tsv
+p:r	6	# sub p->r, seen 2x in typos.tsv
+g:k	6	# sub g->k, seen 2x in typos.tsv
+e:o	6	# sub e->o, seen 2x in typos.tsv
+j:c	6	# sub j->c, seen 2x in typos.tsv
+i:o	6	# sub i->o, seen 2x in typos.tsv
+ö:e	6	# sub ö->e, seen 2x in typos.tsv
+ü:ö	6	# sub ü->ö, seen 2x in typos.tsv
+f:v	6	# sub f->v, seen 2x in typos.tsv
+i:e	6	# sub i->e, seen 2x in typos.tsv
+k:	6	# del k, seen 2x in typos.tsv
+y:	6	# del y, seen 2x in typos.tsv
+r:	6	# del r, seen 2x in typos.tsv
+h:	6	# del h, seen 2x in typos.tsv
+:y	6	# ins y, seen 2x in typos.tsv
+:m	6	# ins m, seen 2x in typos.tsv
+:u	6	# ins u, seen 2x in typos.tsv
