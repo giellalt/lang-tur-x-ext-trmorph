@@ -99,19 +99,78 @@ GIELLA_LOCAL_TARGETS=
 $(srcdir)/ext-TRmorph/analyzer.cpp.lexc: $(srcdir)/ext-TRmorph/analyzer.lexc
 	$(AM_V_GEN)cd $(dir $@ ) && $(MAKE) $(notdir $@ )
 
-$(srcdir)/ext-TRmorph/trmorph.fst: $(srcdir)/ext-TRmorph/analyzer.lexc
+# NB on options.h: it's the subtree's own, gitignored, build-time
+# customization point (see its Makefile: it falls back to options.h-default
+# if options.h doesn't already exist). We (re)generate it as the first step
+# of the trmorph.fst recipe below -- NOT as a separate prerequisite target --
+# because other parts of this build (e.g. the analyzer.cpp.lexc rule above)
+# also indirectly trigger ext-TRmorph's own Makefile, which independently
+# creates a *default* options.h the first time anything there needs it. If
+# our regeneration were a normal timestamp-tracked target, such a pre-existing
+# default options.h would already look "up to date" and our recipe would
+# never run. Always overwriting it right before the foma build is the only
+# way to reliably get our SEPARATOR_PLUS/MARK_SUBCATEGORIES override in.
+#
+# SEPARATOR_PLUS turns TRmorph's native "<Tag>" analysis symbols into
+# GiellaLT's "+Tag" style ("<" becomes "+", ">" is dropped), and
+# MARK_SUBCATEGORIES=0 additionally splits "<Postp:adj:nomC>"-style
+# subcategory tags (colon-separated) into separate "+"-tags, matching
+# GiellaLT tag granularity. This does not touch any subtree source file.
+#
+# The recipe below hands off to ext-TRmorph's own Makefile (which calls
+# foma directly, not via any variable of ours), so it resolves whatever
+# `foma` is first on PATH in the environment make itself runs in.
+$(srcdir)/ext-TRmorph/trmorph.fst: $(srcdir)/ext-TRmorph/analyzer.lexc \
+					$(srcdir)/ext-TRmorph/options.h-default
+	$(AM_V_GEN)sed \
+		-e 's/^#define  *SEPARATOR_PLUS .*/#define SEPARATOR_PLUS 1/' \
+		-e 's/^#define  *MARK_SUBCATEGORIES .*/#define MARK_SUBCATEGORIES 0/' \
+		$(srcdir)/ext-TRmorph/options.h-default > $(srcdir)/ext-TRmorph/options.h
 	$(AM_V_GEN)cd $(dir $< ) && $(MAKE) hyphenate.cpp.xfst
 	$(AM_V_GEN)cd $(dir $@ ) && $(MAKE) $(notdir $@ )
 
-lexicon.hfst: $(srcdir)/ext-TRmorph/trmorph.fst
+# mark-nonstandard-lemmas.regex is written as upper=unchanged tags,
+# lower=tags with +Err/Orth inserted (the natural direction for a replace
+# rule). We invert the compiled filter here so that, composed below, it
+# transforms lexicon.hfst's *upper* (tags) side instead of its lower
+# (surface) side -- see the comment on GT_LEXICON_COPY_RECIPE for why
+# upper must stay the tags side.
+.generated/mark-nonstandard-lemmas.hfst: mark-nonstandard-lemmas.regex $(GENDIR)
+	$(AM_V_RGX2FST)"$(HFST_REGEXP2FST)" $(HFST_FORMAT) \
+		-S $< -o $@.uninverted
+	$(AM_V_at)"$(HFST_INVERT)" -i $@.uninverted -o $@
+	$(AM_V_at)rm -f $@.uninverted
+
+# Override lexicon.hfst's deps/recipe (see GT_LEXICON_COPY_DEPS/_RECIPE in
+# giella-core's src-morphology-dir-include.am) instead of defining our own
+# "lexicon.hfst:" rule: that target is already defined there, and a second
+# definition here would just silently lose to (or silently win over,
+# depending on ordering) that one -- automake keeps both and plain
+# "last definition wins", which is exactly the trap this mechanism avoids.
+GT_LEXICON_COPY_DEPS = $(srcdir)/ext-TRmorph/trmorph.fst \
+			.generated/mark-nonstandard-lemmas.hfst
+
+# lexicon.hfst must come out upper=tags, lower=surface, matching the
+# orientation a normal GT_LEXC_ROOT/hfst-lexc-built lexicon.hfst has (the
+# rest of the pipeline builds both the generator and analyser products
+# from a plain copy of this file, with no inversion at that stage -- see
+# analyser-raw-gt-%.hfst in giella-core's src-fst-dir-include.am). foma's
+# own trmorph.fst is the opposite way around (upper=surface, lower=tags,
+# matching flookup/analyzer semantics), so plain $(HFST_FST2FST) format
+# conversion, with no inversion, gives exactly the orientation we need
+# here. We convert with $(HFST_FORMAT) -- the same format the rest of
+# this build's FSTs use -- rather than a fixed format, since hfst-xfst
+# refuses to compose automata of two different formats later on.
+define GT_LEXICON_COPY_RECIPE
 	$(AM_V_CP)cp -f $< $@.gz
 	$(AM_V_GEN)gunzip $@.gz
 	$(AM_V_MV)mv $@ $@.tmp
-	$(AM_V_FST2FST)$(HFST_FST2FST) $(MORE_VERBOSITY) $(HFST_FORMAT) -i $@.tmp -o $@
-	$(AM_V_at)rm -f $@.tmp
-
-lexicon.foma: $(srcdir)/ext-TRmorph/trmorph.fst
-	$(AM_V_CP)cp -f $< $@
+	$(AM_V_FST2FST)"$(HFST_FST2FST)" $(MORE_VERBOSITY) \
+		$(HFST_FORMAT) -i $@.tmp -o $@.uninverted
+	$(AM_V_at)"$(HFST_COMPOSE)" -1 .generated/mark-nonstandard-lemmas.hfst \
+		-2 $@.uninverted -o $@
+	$(AM_V_at)rm -f $@.tmp $@.uninverted
+endef
 
 # Outcommented - the generted ATT format is not complete for Xfst consumption. Maybe later.
 # lexicon.xfst: lexicon.hfst
