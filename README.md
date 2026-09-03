@@ -1,8 +1,8 @@
 The Turkish morphology and tools
 ==========================================
 
-[![Maturity](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-tur-x-ext-trmorph%2Fmain%2Fdocs%2Fbadgedata%2Ffst-maturity.json)](https://giellalt.github.io/MaturityClassification.html)
-![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-tur-x-ext-trmorph%2Fmain%2Fdocs%2Fbadgedata%2Ffst-lemmacount.json)
+[![Maturity](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-tur-x-ext-trmorph%2Fgenerated%2Fdocs-data%2Ffst-maturity.json)](https://giellalt.github.io/MaturityClassification.html)
+![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-tur-x-ext-trmorph%2Fgenerated%2Fdocs-data%2Ffst-lemmacount.json)
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-tur-x-ext-trmorph)](https://github.com/giellalt/lang-tur-x-ext-trmorph/issues)
 [![License](https://img.shields.io/github/license/giellalt/lang-tur-x-ext-trmorph)](https://github.com/giellalt/lang-tur-x-ext-trmorph/blob/main/LICENSE)
 [![Doc build](https://img.shields.io/github/actions/workflow/status/giellalt/lang-tur-x-ext-trmorph/docs.yml?logo=github&label=DocCI)](https://github.com/giellalt/lang-tur-x-ext-trmorph/actions/workflows/docs.yml)
