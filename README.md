@@ -82,17 +82,11 @@ linux](https://wiki.apertium.org/wiki/Installation_of_grammar_libraries)
 
 Further details and dependencies are described on the GiellaLT [Getting Started](https://giellalt.uit.no/infra/GettingStarted.html) pages.
 
-Downloading
------------
+Downloading the source code
+---------------------------
 
-Using Git:
 ```
 git clone https://github.com/giellalt/lang-tur-x-ext-trmorph
-```
-
-Using Subversion:
-```
-svn checkout https://github.com/giellalt/lang-tur-x-ext-trmorph.git/trunk lang-tur-x-ext-trmorph
 ```
 
 Building and installation
