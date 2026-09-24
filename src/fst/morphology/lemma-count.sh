@@ -3,9 +3,9 @@
 # For debugging, uncomment this command:
 # set -x
 
-srcdir=$1
+srcdir="$(cd "$(dirname "$0")" && pwd)"
 
-trmorphdir="$srcdir/src/fst/morphology/ext-TRmorph"
+trmorphdir="$srcdir/ext-TRmorph"
 
 # analyzer.lexc composes the whole lexicon via cpp #include (see its own
 # Makefile), and uses #if (OPTION == 1) blocks controlled by options.h, so we
